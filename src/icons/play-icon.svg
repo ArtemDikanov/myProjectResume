@@ -1,0 +1,15 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-16" y="-16" width="192" height="192"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(8px);clip-path:url(#bgblur_0_1252_8_clip_path);height:100%;width:100%"></div></foreignObject><g data-figma-bg-blur-radius="16">
+<rect x="1" y="1" width="158" height="158" rx="79" fill="white" fill-opacity="0.08"/>
+<rect x="1" y="1" width="158" height="158" rx="79" stroke="url(#paint0_linear_1252_8)" stroke-width="2"/>
+<path d="M115 80.0001C115.002 80.8489 114.784 81.6838 114.368 82.4237C113.952 83.1635 113.352 83.783 112.625 84.222L67.6 111.766C66.8409 112.231 65.9715 112.484 65.0815 112.501C64.1915 112.517 63.3133 112.296 62.5375 111.859C61.7691 111.43 61.129 110.803 60.683 110.044C60.237 109.285 60.0013 108.421 60 107.541V52.4595C60.0013 51.5791 60.237 50.715 60.683 49.9559C61.129 49.1969 61.7691 48.5704 62.5375 48.1407C63.3133 47.7043 64.1915 47.4829 65.0815 47.4994C65.9715 47.5159 66.8409 47.7696 67.6 48.2345L112.625 75.7782C113.352 76.2172 113.952 76.8367 114.368 77.5765C114.784 78.3163 115.002 79.1513 115 80.0001Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_1252_8_clip_path" transform="translate(16 16)"><rect x="1" y="1" width="158" height="158" rx="79"/>
+</clipPath><linearGradient id="paint0_linear_1252_8" x1="0" y1="80" x2="160" y2="80" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.04"/>
+<stop offset="0.505" stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0.08"/>
+</linearGradient>
+</defs>
+</svg>
