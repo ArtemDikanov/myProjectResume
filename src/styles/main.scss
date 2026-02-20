@@ -2,6 +2,7 @@
 @use 'globals';
 @use 'normalize';
 @use 'variables';
+@use 'mixins&functions';
 
 @use 'blocks/header/header';
 @use 'blocks/header/header-adaptive';
