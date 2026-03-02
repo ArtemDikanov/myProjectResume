@@ -1,0 +1,18 @@
+@import'/src/styles/mixinsAndFunctions';
+.visually-hidden {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+
+    &__menu-list {
+        @include flex;
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+}
