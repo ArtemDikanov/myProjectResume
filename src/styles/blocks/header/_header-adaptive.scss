@@ -1,0 +1,12 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+@media (max-width: 850px) { 
+    .menu-link {
+        display: none;
+    } 
+
+    .header__burger {
+        display: block;
+    }
+}
+

@@ -2,5 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+};
 
+
+@function fontSize($desiredFont) {
+    @return clamp(14px, calc(100vw / (1440 / $desiredFont)), 48px);
+};
+
+
+@function menuColumnGap() {
+    @return calc(100vw / (1440 / 40));
+};
+
+@function inHeaderPadding() {
+    @return calc(100vw / (1440 / 80));
+};
