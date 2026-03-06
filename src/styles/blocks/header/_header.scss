@@ -27,12 +27,36 @@
             padding-right: inHeaderPadding();
 
             .link {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                height: fontSize(28);
                 white-space: nowrap;
                 text-decoration: none;
+
+                @include hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
 
                 &:visited {
                     color: var(--dark-color);
                 }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 0%;
+                    translate: 0%;
+                    width: 0;
+                    height: 2px;
+                    background-color: currentColor;
+                    transition-duration: 0.3s;
+                }
+
+
             }
 
             .visually-hidden {
@@ -46,6 +70,13 @@
         background: none;
         border: none;
         padding-top: calc(fontSize(14) / 2);
+
+        @include hover {
+            .colorSearch {
+                stroke: var(--light-blue-color);
+                transition: 0.3s;
+            }
+        }
         
         &-svg {
             width: calc(fontSize(14) * 2);
@@ -59,6 +90,13 @@
         background: none;
         border: none;
         padding-top: calc(fontSize(14) / 2);
+
+        @include hover {
+            .colorBurger {
+                fill: var(--light-blue-color);
+                transition: 0.3s;
+            }
+        }
 
         &-svg {
             width: calc(fontSize(14) * 2);

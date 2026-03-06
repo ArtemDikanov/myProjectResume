@@ -1,0 +1,7 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.header__input {
+    border: 1px solid var(--dark-color);
+    border-radius: var(--border-radius);
+}
+
