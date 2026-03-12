@@ -2,10 +2,15 @@
 @use 'globals';
 @use 'normalize';
 @use 'variables';
+@use 'animations';
 
 @use 'blocks/header/header';
-@use 'blocks/header/header-adaptive';
 @use 'blocks/header/header-input';
+@use 'blocks/header/_header-searchButton';
+@use 'blocks/header/header-burger';
+@use 'blocks/header/header-adaptive';
+@use 'blocks/header/header-dialog';
 
 @use 'blocks/hero/hero';
 @use 'blocks/hero/hero-adaptive';
+

@@ -66,50 +66,8 @@
         }
     }
 
-    &__searchButton {
-        background: none;
-        border: none;
-        padding-top: calc(fontSize(14) / 2);
 
-        @include hover {
-            .colorSearch {
-                stroke: var(--light-blue-color);
-                transition: 0.3s;
-            }
-        }
-        
-        &-svg {
-            width: calc(fontSize(14) * 2);
-            height: calc(fontSize(14) * 2);
-        }
-
-    }
-
-    &__burger {
-        display: none;
-        background: none;
-        border: none;
-        padding-top: calc(fontSize(14) / 2);
-
-        @include hover {
-            .colorBurger {
-                fill: var(--light-blue-color);
-                transition: 0.3s;
-            }
-        }
-
-        &-svg {
-            width: calc(fontSize(14) * 2);
-            height: calc(fontSize(14) * 2);
-
-        }
-    }
+    
 }
 
-.colorBurger {
-    fill: var(--dark-color);
-}
 
-.colorSearch {
-    stroke: var(--dark-color);
-}

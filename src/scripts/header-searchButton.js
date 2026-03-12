@@ -8,7 +8,6 @@ export function viewInput() {
     }
     
     searchButton.addEventListener('click', () => {
-        // Очищаем предыдущий таймер, если он есть
             const searchInput = document.querySelector('.header__input');
             const itemInput = document.querySelector('.header__menu-itemInput');
             // Проверяем существование поля ввода

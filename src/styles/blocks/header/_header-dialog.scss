@@ -1,0 +1,29 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.header__menu.dialog {
+    padding-top: 40%;
+}
+
+
+.header__dialog {
+    position: fixed;
+    top: 43px;
+    width: 100vw;
+    height: 100dvh;
+    border: none;
+    /* opacity: var( --translucent-color);  */
+    background-color: rgb(0, 0, 0);
+    /* background: linear-gradient(270deg, rgba(255, 255, 255, 1.0), rgb(138,189,243)); */
+}
+
+.header__menu-list.dialog {
+    flex-direction: column;
+}
+
+.link.dialog {
+    color: rgb(255, 255, 255);
+
+    &:visited {
+        color: rgb(255, 255, 255);
+    }
+}

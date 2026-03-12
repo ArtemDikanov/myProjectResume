@@ -3,5 +3,8 @@
 .header__input {
     border: 1px solid var(--dark-color);
     border-radius: var(--border-radius);
+    animation-name: headerInputAppearance;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
 }
 

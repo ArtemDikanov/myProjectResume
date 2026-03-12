@@ -1,7 +1,7 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
 @media (max-width: 850px) { 
-    .menu-link {
+    .menu-link.noDialog {
         display: none;
     } 
 
@@ -10,3 +10,9 @@
     }
 }
 
+
+@media (max-width: 940px) {
+    .header__input {
+        width: 160px;
+    }
+}
