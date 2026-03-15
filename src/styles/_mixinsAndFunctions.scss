@@ -24,6 +24,9 @@
     @return clamp(14px, calc(100vw / (1440 / $desiredFont)), 48px);
 };
 
+@function fontSizeBurgerMenu($desiredFont) {
+    @return clamp(16px, calc(100vw / (850 / $desiredFont)), 48px);
+};
 
 @function menuColumnGap() {
     @return calc(100vw / (1440 / 40));

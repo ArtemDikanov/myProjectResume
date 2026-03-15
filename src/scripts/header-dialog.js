@@ -1,6 +1,5 @@
 export function dialogOpen() {
     const dialog = document.querySelector('.header__dialog');
-    const contentDialog = document.querySelector('.header__dialog-content');
     dialog.innerHTML = `
         <nav class="header__menu dialog">
           <ul class="header__menu-list dialog">
@@ -12,6 +11,14 @@ export function dialogOpen() {
           </ul>
         </nav>`
     dialog.show();
+    
 }
+
+export function dialogClose() {
+    const dialog = document.querySelector('.header__dialog');
+    dialog.close();
+}
+
+
 
 

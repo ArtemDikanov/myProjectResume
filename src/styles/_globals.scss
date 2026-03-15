@@ -1,25 +1,6 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
 body {
-    font-family: var(--font-family-base);
-    font-size: fontSize(14);
     overflow: hidden;
-    
 }
-
-/* @media (hover: hover) and (pointer: fine) {
-    .header__searchButton:hover {
-        .colorSearch {
-                stroke: var(--light-blue-color);
-                transition: 0.3s;
-            }
-    }
-
-    .header__burger:hover {
-        .colorBurger {
-                fill: var(--light-blue-color);
-                transition: 0.3s;
-            }
-    }
-} */
 

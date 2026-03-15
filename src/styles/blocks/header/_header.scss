@@ -5,7 +5,8 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    
+    font-size: fontSize(14);
+    font-family: var(--font-family-base);
 
     &__logo {
         padding-top: calc(fontSize(14) / 2);

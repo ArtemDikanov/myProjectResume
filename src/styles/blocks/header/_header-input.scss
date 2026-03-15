@@ -1,5 +1,14 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
+@keyframes headerInputAppearance {
+    from {
+        max-width: 0px;
+    }
+    to {
+        max-width: 193px;
+    }
+}
+
 .header__input {
     border: 1px solid var(--dark-color);
     border-radius: var(--border-radius);
