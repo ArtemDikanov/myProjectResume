@@ -1,6 +1,10 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.link {
+    white-space: nowrap;
 }
 

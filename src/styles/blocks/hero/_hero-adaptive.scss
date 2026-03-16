@@ -1,0 +1,26 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+@media screen and (orientation: landscape) {
+    .information-block {
+        height: 20dvh;
+    }
+}
+
+@media (max-width: 500px) {
+    .information-block__button-svg {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .hero-block__main {
+        justify-content: center;
+        flex-direction: column;
+        column-gap: 50px;
+
+        .videolink {
+            margin-top: 0;
+            margin-right: 0;
+        }
+    }
+}

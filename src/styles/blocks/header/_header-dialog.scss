@@ -21,6 +21,7 @@
     animation-name: headerDialogAppearance;
     animation-duration: 300ms;
     animation-timing-function: linear;
+    z-index: 100;
 }
 
 .header__menu.dialog {
