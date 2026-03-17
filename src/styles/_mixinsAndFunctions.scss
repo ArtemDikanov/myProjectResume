@@ -21,7 +21,11 @@
 
 
 @function fontSize($desiredFont) {
-    @return clamp(14px, calc(100vw / (1440 / $desiredFont)), 64px);
+    @return clamp(14px, calc(100vw / (1440 / $desiredFont)), 48px);
+};
+
+@function fontSizeTitle($desiredFont) {
+    @return clamp(40px, calc(100vw / (1440 / $desiredFont)), 64px);
 };
 
 @function fontSizeBurgerMenu($desiredFont) {
