@@ -21,45 +21,17 @@
 
 
 @function fontSize($desiredFont) {
-    @return clamp(14px, calc(100vw / (1440 / $desiredFont)), 48px);
+    @return clamp(14px, calc(100vw / (var(--desktop-display-width) / $desiredFont)), 48px);
 };
 
 @function fontSizeTitle($desiredFont) {
-    @return clamp(40px, calc(100vw / (1440 / $desiredFont)), 64px);
+    @return clamp(40px, calc(100vw / (var(--desktop-display-width) / $desiredFont)), 64px);
 };
+
+@function matchingLayout($layoutValue) {
+    @return calc(100vw / (var(--desktop-display-width) / $layoutValue));
+}
 
 @function fontSizeBurgerMenu($desiredFont) {
     @return clamp(16px, calc(100vw / (850 / $desiredFont)), 48px);
 };
-
-@function menuColumnGap() {
-    @return calc(100vw / (1440 / 40));
-};
-
-@function inHeaderPadding() {
-    @return calc(100vw / (1440 / 80));
-};
-
-@function videoLinkSize() {
-    @return calc(100vw / (1440 / 160));
-}
-
-@function infoBlockButtonWidth() {
-    @return calc(100vw / (1440 / 323));
-}
-
-@function infoBlockButtonHeight() {
-    @return calc(100vw / (1440 / 82));
-}
-
-@function infoBlockButtonPaddingHorizontal() {
-    @return calc(100vw / (1440 / 48));
-}
-
-@function infoBlockButtonPaddingVertical() {
-    @return calc(100vw / (1440 / 24));
-}
-
-@function phoneIconSize() {
-    @return calc(100vw / (1440 / 25.5));
-}

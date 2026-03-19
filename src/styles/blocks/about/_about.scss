@@ -1,0 +1,7 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.about-block {
+    @include flex;
+    margin-top: matchingLayout(100);
+    margin-bottom: matchingLayout(100);
+}

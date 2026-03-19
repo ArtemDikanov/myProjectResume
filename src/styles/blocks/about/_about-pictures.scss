@@ -1,0 +1,42 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.about-block__pictures {
+    display: flex;
+    align-items: flex-start;
+    column-gap: matchingLayout(16);
+    margin-bottom: matchingLayout(100);
+    margin-left: matchingLayout(80);
+    margin-right: matchingLayout(80);
+    /* flex-direction: column; */
+
+    &-big {
+        width: matchingLayout(292);
+        height: matchingLayout(480);
+        border-radius: var(--border-radius);
+    }
+
+    &-little {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: matchingLayout(16);
+
+        .picturesAboutAverage {
+            width: matchingLayout(292);
+            height: matchingLayout(320);
+            border-radius: var(--border-radius);
+        }
+
+        .picturesAboutSmall {
+            width: matchingLayout(138);
+            height: matchingLayout(144);
+            border-radius: var(--border-radius);
+        }
+    }
+
+    &-smalls {
+        display: flex;
+        align-items: flex-start;
+        column-gap: matchingLayout(16);
+    }
+}

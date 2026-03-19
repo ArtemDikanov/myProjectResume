@@ -1,0 +1,39 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.videolinkDesktop {
+    width: matchingLayout(160);
+    height: matchingLayout(160);
+    margin-top: 10%;
+    margin-right: 20%;
+
+    @include hover {
+        scale: 110%;
+        transition-duration: 0.3s;
+    }
+
+    &__svg {
+        width: matchingLayout(160);
+        height: matchingLayout(160);
+    }
+}
+
+.videolinkMobile {
+    display: none;
+    min-width: matchingLayout(323);
+    min-height: matchingLayout(82);
+    padding: min(matchingLayout(24)) min(matchingLayout(48));
+    padding-bottom: min(matchingLayout(24));
+    margin-top: 3%;
+    margin-left: 5%;
+    font-family: var(--font-family-base);
+    font-size: fontSize(24);
+    color: var(--white-color);
+    font-weight: 400;
+    border: var(--border);
+    border-radius: var(--border-radius-button);
+    background: var(--grey-color);
+    backdrop-filter: var(--blur-filter); 
+    white-space: nowrap;
+    text-decoration: none;
+}
+

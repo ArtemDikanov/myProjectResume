@@ -12,4 +12,10 @@
 
 @use 'blocks/hero/hero';
 @use 'blocks/hero/hero-adaptive';
+@use 'blocks/hero/hero-button';
+@use 'blocks/hero/hero-link';
+
+@use 'blocks/about/about.scss';
+@use 'blocks/about/about-pictures';
+@use 'blocks/about/about-information';
 

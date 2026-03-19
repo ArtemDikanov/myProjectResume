@@ -1,0 +1,9 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.about-block__information {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: matchingLayout(511);
+    height: matchingLayout(450);
+}
