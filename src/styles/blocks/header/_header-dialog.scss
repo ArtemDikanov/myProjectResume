@@ -22,10 +22,12 @@
     animation-duration: 300ms;
     animation-timing-function: linear;
     z-index: 100;
+    overflow: scroll;
 }
 
 .header__menu.dialog {
     padding-top: 30%;
+    padding-bottom: 10%;
 }
 
 .header__menu-list.dialog {
@@ -42,4 +44,15 @@
     &::after {
         top: 150%;          
     }
+}
+
+
+.body-no-scroll {
+ height: 100vh;
+ overflow: hidden;
+ position: fixed; 
+ width: 100%;
+ left: 0;
+ top: 0;
+ right: 0;
 }
