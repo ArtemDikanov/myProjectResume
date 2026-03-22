@@ -19,13 +19,8 @@
 
 }
 
-
-@function fontSize($desiredFont) {
-    @return clamp(14px, calc(100vw / (var(--desktop-display-width) / $desiredFont)), 48px);
-};
-
-@function fontSizeTitle($desiredFont) {
-    @return clamp(40px, calc(100vw / (var(--desktop-display-width) / $desiredFont)), 64px);
+@function fontSizeUniversal($minSize, $desiredFont, $maxSize) {
+    @return clamp($minSize, calc(100vw / (var(--desktop-display-width) / $desiredFont)), $maxSize);
 };
 
 @function matchingLayout($layoutValue) {

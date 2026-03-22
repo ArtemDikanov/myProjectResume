@@ -4,10 +4,10 @@
     display: flex;
     align-items: flex-start;
     column-gap: matchingLayout(16);
+    margin-top: matchingLayout(100);
     margin-bottom: matchingLayout(100);
     margin-left: matchingLayout(80);
     margin-right: matchingLayout(80);
-    /* flex-direction: column; */
 
     &-big {
         width: matchingLayout(292);

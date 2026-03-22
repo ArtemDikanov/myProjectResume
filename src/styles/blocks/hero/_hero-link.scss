@@ -26,7 +26,7 @@
     margin-top: 3%;
     margin-left: 5%;
     font-family: var(--font-family-base);
-    font-size: fontSize(24);
+    font-size: fontSizeUniversal(14px, 24, 48px);;
     color: var(--white-color);
     font-weight: 400;
     border: var(--border);

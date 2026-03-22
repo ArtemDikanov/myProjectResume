@@ -13,8 +13,8 @@
     }
         
     &-svg {
-        width: calc(fontSize(14) * 2);
-        height: calc(fontSize(14) * 2);
+        width: calc(fontSizeUniversal(14px, 14, 48px) * 2);
+        height: calc(fontSizeUniversal(14px, 14, 48px) * 2);
     }
 }
 

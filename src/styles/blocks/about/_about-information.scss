@@ -5,5 +5,49 @@
     align-items: flex-start;
     flex-direction: column;
     width: matchingLayout(511);
-    height: matchingLayout(450);
+    margin-top: matchingLayout(10);
+    margin-right: matchingLayout(80);
+
+    &-title {
+        margin-bottom: matchingLayout(8);
+        font-size: fontSizeUniversal(18px, 36, 50px);
+    }
+
+    &-subtitle {
+        margin-bottom: matchingLayout(40);
+        font-size: fontSizeUniversal(16px, 24, 48px);
+    }
+
+    &-paragraph {
+        margin-bottom: matchingLayout(40);
+        font-size: fontSizeUniversal(14px, 20, 44px);
+        padding-left: matchingLayout(32);
+        border-left: 3px solid #0099ff;
+    }
+
+    &-button {
+        @include flex;
+        column-gap: matchingLayout(16);
+        min-width: matchingLayout(249);
+        min-height: matchingLayout(66);
+        margin-bottom: 3%;
+        padding: matchingLayout(16) matchingLayout(40);
+        font-size: fontSizeUniversal(14px, 24, 48px);
+        color: var(--white-color);
+        border: var(--border);
+        border-radius: var(--border-radius-button);
+        background: var(--grey-color);
+        backdrop-filter: var(--blur-filter); 
+        white-space: nowrap;
+
+        @include hover {
+            background: var( --light-blue-color);
+            transition-duration: 0.3s; 
+        }
+
+        .information-button__svg {
+            width: matchingLayout(34);
+            height: matchingLayout(34);
+        }
+    }
 }

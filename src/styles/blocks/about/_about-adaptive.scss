@@ -1,0 +1,58 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+@media (max-width: 957px) {
+    .about-block__information {
+        margin-top: matchingLayout(20);
+    }
+}
+
+
+@media (max-width: 910px) {
+    .about-block {
+        flex-direction: column-reverse;
+
+        &__information {
+            align-items: center;
+            width: 100vw;
+            padding: matchingLayout(80);
+            margin: 0;
+
+            &-subtitle {
+                text-align: center;
+            }
+
+            &-paragraph {
+                text-align: center;
+            }
+
+            &-button {
+                margin-top: 3%;
+                margin-bottom: 1%;
+
+                .information-button__svg {
+                    display: none;
+                }
+            }
+        }
+
+        &__pictures {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .about-block__pictures {
+        flex-direction: column;
+        align-items: center;
+
+         &-big {
+            width: 65%;
+            height: auto;
+         }
+
+        &-little {
+            display: none;
+        }
+    }
+}

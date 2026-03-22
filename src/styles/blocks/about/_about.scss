@@ -2,6 +2,10 @@
 
 .about-block {
     @include flex;
-    margin-top: matchingLayout(100);
+    height: 100%;
     margin-bottom: matchingLayout(100);
+    font-family: var(--font-family-base);
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    background-size: cover;
 }

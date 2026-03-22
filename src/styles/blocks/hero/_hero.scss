@@ -24,13 +24,13 @@
 
             &__title {
                 font-family: var(--font-family-title);
-                font-size: fontSizeTitle(64);
+                font-size: fontSizeUniversal(40px, 64, 64px);
                 font-weight: 500;
             }
 
             &__paragraph {
                 font-family: var(--font-family-base);
-                font-size: fontSize(20);
+                font-size: fontSizeUniversal(14px, 20, 48px);
                 font-weight: 400;
             }
         }
