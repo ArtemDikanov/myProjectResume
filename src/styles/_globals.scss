@@ -1,7 +1,29 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
+.visually-hidden {
+    display: none;
+}
 
 .link {
     white-space: nowrap;
 }
 
+
+.greyButton {
+    @include flex;
+    font-family: var(--font-family-base);
+    font-size: fontSizeUniversal(14px, 24, 48px);;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 400;
+    border: var(--border);
+    border-radius: var(--border-radius-button);
+    background: var(--grey-color);
+    backdrop-filter: var(--blur-filter); 
+    white-space: nowrap;
+
+    @include hover {
+        background: var( --light-blue-color);
+        transition-duration: 0.3s; 
+    }
+}

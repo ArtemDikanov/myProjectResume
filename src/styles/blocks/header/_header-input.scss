@@ -10,10 +10,16 @@
 }
 
 .header__input {
+    padding-left: matchingLayout(10);
     border: 1px solid var(--dark-color);
     border-radius: var(--border-radius);
     animation-name: headerInputAppearance;
     animation-duration: 300ms;
     animation-timing-function: linear;
+
+    &:focus {
+        outline: none;
+        border: 2px solid var(--dark-color);
+    }
 }
 

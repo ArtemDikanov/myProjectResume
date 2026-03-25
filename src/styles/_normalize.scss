@@ -161,12 +161,12 @@ button {
   (за исключением тех, у которых уже указан
   атрибут stroke со значением 'none')
  */
-:where([stroke]:not(
+/* :where([stroke]:not(
   [stroke="none"],
   [stroke^="url"]
 )) {
   stroke: currentColor;
-}
+} */
 
 /**
   Чиним баг задержки смены цвета при взаимодействии с svg-элементами

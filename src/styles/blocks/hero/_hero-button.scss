@@ -1,26 +1,13 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
 .hero-button {
+    column-gap: matchingLayout(16);
     min-width: matchingLayout(323);
     min-height: matchingLayout(82);
     padding: min(matchingLayout(24)) min(matchingLayout(48));
     margin-top: 3%;
     margin-left: 5%;
     margin-bottom: 3%;
-    font-family: var(--font-family-base);
-    font-size: fontSizeUniversal(14px, 24, 48px);;
-    color: var(--white-color);
-    font-weight: 400;
-    border: var(--border);
-    border-radius: var(--border-radius-button);
-    background: var(--grey-color);
-    backdrop-filter: var(--blur-filter); 
-    white-space: nowrap;
-
-    @include hover {
-        background: var( --light-blue-color);
-        transition-duration: 0.3s; 
-    }
 
     &__svg {
         width: matchingLayout(25.5);

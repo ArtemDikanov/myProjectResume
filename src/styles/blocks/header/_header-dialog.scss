@@ -19,7 +19,7 @@
     border: none;
     background-color: rgb(0, 0, 0);
     animation-name: headerDialogAppearance;
-    animation-duration: 300ms;
+    animation-duration: 600ms;
     animation-timing-function: linear;
     z-index: 100;
     overflow: scroll;
@@ -48,11 +48,10 @@
 
 
 .body-no-scroll {
- height: 100vh;
- overflow: hidden;
- position: fixed; 
- width: 100%;
- left: 0;
- top: 0;
- right: 0;
+    overflow: hidden;
+    position: fixed; 
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
 }

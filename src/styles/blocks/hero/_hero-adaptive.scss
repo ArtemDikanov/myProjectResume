@@ -1,12 +1,16 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
 @media (max-width: 500px) {
+    /* .hero-block {
+        height: 100dvh;
+    } */
+
     .hero-block__main {
         flex-direction: column;
+        /* margin-top: 25vh; */
 
         .text-block {
             text-align: center;
-            margin-left: 0;
         }
 
         .videolinkDesktop {

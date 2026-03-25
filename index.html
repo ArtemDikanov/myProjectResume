@@ -30,7 +30,7 @@
               </button>
             </li>
             <li class="header__menu-itemInput visually-hidden">
-              <input type="search" class="header__input visually-hidden">
+              <input type="search" name="search" id="search" aria-label="Поиск по сайту" class="header__input visually-hidden">
             </li>
             <li class="header__menu-item">
               <button class="header__searchButton">
@@ -51,7 +51,15 @@
           </ul>
         </nav>
         <dialog class="header__dialog">
-          <div class="header__dialog-content"></div>
+          <nav class="header__menu dialog">
+            <ul class="header__menu-list dialog">
+              <li class="header__menu-item menu-link"><a href="" class="link dialog">About us</a></li>
+              <li class="header__menu-item menu-link"><a href="" class="link dialog">Destinations</a></li>
+              <li class="header__menu-item menu-link"><a href="" class="link dialog">Packages</a></li>
+              <li class="header__menu-item menu-link"><a href="" class="link dialog">Testimonial</a></li>
+              <li class="header__menu-item menu-link"><a href="" class="link dialog">Contact Us</a></li>
+            </ul>
+          </nav>
         </dialog>
       </header>
       <div class="hero-block__main">
@@ -81,24 +89,22 @@
             </svg>
         </a>
         <a href="https://vkvideo.ru/video-227203050_456239050?sh=4" target="_blank" title="Красивое видео про подводный мир в VK Video" rel="noopener noreferrer" class="hero-block__main-videoLink videolinkMobile">Watch video</a>
-        <button class="hero-block__main-button hero-button">
+        <a href="/" class="hero-block__main-button hero-button greyButton">
             <svg class="hero-button__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.12833 11.0358C7.16833 15.045 10.455 18.3175 14.4642 20.3717L17.5808 17.255C17.9633 16.8725 18.53 16.745 19.0258 16.915C20.6125 17.4392 22.3267 17.7225 24.0833 17.7225C24.8625 17.7225 25.5 18.36 25.5 19.1392V24.0833C25.5 24.8625 24.8625 25.5 24.0833 25.5C10.7808 25.5 0 14.7192 0 1.41667C0 0.6375 0.6375 0 1.41667 0H6.375C7.15417 0 7.79167 0.6375 7.79167 1.41667C7.79167 3.1875 8.075 4.8875 8.59917 6.47417C8.755 6.97 8.64167 7.5225 8.245 7.91917L5.12833 11.0358Z" fill="white"/>
             </svg>
             Book a call
-        </button>
+        </a>
       </div>
     </section>
     <main class="main">
       <section class="about-block">
         <div class="about-block__pictures">
-          <img class="about-block__pictures-big" src="./src/images/aboutUsSection-image1.jpg" loading="lazy" alt="Человек под водой всплывает" class="about-block__pictures-big picturesAbout">
-          <div class="about-block__pictures-little">
-            <img src="./src/images/aboutUsSection-image2.jpg" loading="lazy" alt="Человек под водой подплывает к кораллам" class="picturesAboutAverage">
-            <div class="about-block__pictures-smalls">
-              <img src="./src/images/aboutUsSection-image3.jpg" loading="lazy" alt="Полосатые рыбы плывут под водой" class="picturesAboutSmall">
-              <img src="./src/images/aboutUsSection-image4.jpg" loading="lazy" alt="Черепаха под водой стремится вынырнуть" class="picturesAboutSmall">
-            </div>
+          <div class="about-block_pictures-gallery about-gallery">
+            <img class="about-gallery__big" src="./src/images/aboutUsSection-image1.jpg" loading="lazy" alt="Человек под водой всплывает">
+            <img class="about-gallery__average" src="./src/images/aboutUsSection-image2.jpg" loading="lazy" alt="Человек под водой подплывает к кораллам" class="picturesAboutAverage">
+            <img class="about-gallery__small1" src="./src/images/aboutUsSection-image3.jpg" loading="lazy" alt="Полосатые рыбы плывут под водой" class="picturesAboutSmall">
+            <img class="about-gallery__small2" src="./src/images/aboutUsSection-image4.jpg" loading="lazy" alt="Черепаха под водой стремится вынырнуть" class="picturesAboutSmall">
           </div>
         </div>
         <div class="about-block__information">
@@ -109,7 +115,7 @@
           <p class="about-block__information-paragraph">
             Lorem ipsum dolor sit amet consectetur. In at amet semper velit elit nisi faucibus arcu. Bibendum nulla porttitor faucibus bibendum erat a vulputate sed. Quisque quis viverra turpis at erat vel ut metus congue. Sed senectus ullamcorper imperdiet sit fermentum. Fermentum faucibus proin hac sed condimentum euismod felis risus.
           </p>
-          <button class="about-block__information-button information-button">
+          <button class="about-block__information-button information-button greyButton">
             Read more
             <svg class="information-button__svg" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1219_283)">
@@ -123,6 +129,8 @@
               </defs>
             </svg>
           </button>
+          <dialog class="about-block__information-dialog"></dialog>
+          <!-- <button class="about-block__pictures-button greyButton">View more</button> -->
         </div>
       </section>
     </main>
