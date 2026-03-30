@@ -113,9 +113,9 @@
             Discover the various breathtaking locations
           </h3>
           <p class="about-block__information-paragraph">
-            Lorem ipsum dolor sit amet consectetur. In at amet semper velit elit nisi faucibus arcu. Bibendum nulla porttitor faucibus bibendum erat a vulputate sed. Quisque quis viverra turpis at erat vel ut metus congue. Sed senectus ullamcorper imperdiet sit fermentum. Fermentum faucibus proin hac sed condimentum euismod felis risus.
+            There is a world hidden beneath the shimmering surface of the sea—a realm of eerie shipwrecks, vibrant coral gardens, and ancient geological formations that few have ever witnessed firsthand. We are here to change that. Specializing in bespoke underwater excursions, we offer more than just a dive; we offer a journey into the heart of the ocean’s mysteries.
           </p>
-          <button class="about-block__information-button information-button greyButton">
+          <button class="about-block__information-button information-button greyButton" onclick="window.aboutBlockDialog.showModal()">
             Read more
             <svg class="information-button__svg" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1219_283)">
@@ -129,7 +129,17 @@
               </defs>
             </svg>
           </button>
-          <dialog class="about-block__information-dialog"></dialog>
+          <dialog class="about-block__information-dialog information-dialog" id="aboutBlockDialog" aria-labelledby="aboutBlockDialog">
+            <button class="information-dialog__closeButton" onclick="window.aboutBlockDialog.close()">                
+              <svg class="information-dialog__closeButton-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 20L4 4.00003M20 4L4.00002 20" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+              </svg>               
+            </button>
+            <div class="information-dialog__text">
+              Forget the crowded dive sites and impersonal group tours. Our philosophy is built on intimacy and discovery. Whether you are a certified diver looking to explore untouched caverns or a first-time snorkeler hoping to float above a kaleidoscope of marine life, we curate every detail to match your comfort and skill level. Guided by our team of professional marine biologists and master divers, you won’t just see fish—you will learn the secrets of the ecosystem, the history of the wrecks below your fins, and the delicate balance of this aquatic universe.
+              Safety is our anchor, but wonder is our compass. We utilize top-of-the-line equipment and maintain the highest safety standards, ensuring that your experience is as seamless as it is breathtaking. From the moment you step aboard our vessels, you are not just a tourist; you are an explorer. Let us take you to where the wild things are. The surface is just the beginning.
+            </div>
+          </dialog>
           <!-- <button class="about-block__pictures-button greyButton">View more</button> -->
         </div>
       </section>

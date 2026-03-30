@@ -11,10 +11,10 @@ export function clickBurger() {
     burger.addEventListener('click', () => {
         if (!burger.classList.contains('active')) {
             burger.classList.add('active');
-            dialogOpen()
+            dialogOpen('.header__dialog')
         }
         else {
-            dialogClose();
+            dialogClose('.header__dialog');
             burger.classList.remove('active');
         }
 
