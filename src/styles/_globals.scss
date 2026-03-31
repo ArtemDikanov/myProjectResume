@@ -12,7 +12,7 @@
 .greyButton {
     @include flex;
     font-family: var(--font-family-base);
-    font-size: fontSizeUniversal(14px, 24, 48px);;
+    font-size: fontSizeUniversal(14px, 24, 48px);
     color: var(--white-color);
     text-decoration: none;
     font-weight: 400;
@@ -23,7 +23,38 @@
     white-space: nowrap;
 
     @include hover {
-        background: var( --light-blue-color);
+        background: var(--light-blue-color);
         transition-duration: 0.3s; 
     }
 }
+
+.subtitle {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: matchingLayout(0.48);
+    opacity: 0.8;
+    overflow-wrap: break-word;
+}
+
+.paragraph {
+    font-size: fontSizeUniversal(14px, 20, 44px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.arrowLeftButton, .arrowRightButton {
+    @include flex;
+    min-width: matchingLayout(60);
+    min-height: matchingLayout(60);
+    background: none;
+    border: none;
+
+    @include hover {
+        scale: 110%;
+        transition-duration: 0.3s;
+    }
+}
+
+

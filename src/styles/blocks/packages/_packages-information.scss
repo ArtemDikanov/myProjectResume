@@ -1,0 +1,63 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.packages-block__information {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: matchingLayout(600);
+    margin-top: matchingLayout(100);
+    margin-left: matchingLayout(80);
+    
+    &-title {
+        font-size: fontSizeUniversal(18px, 36, 50px);
+        margin-bottom: matchingLayout(8);
+    }
+
+    &-subtitle {
+        font-size: fontSizeUniversal(16px, 24, 48px);
+        margin-bottom: matchingLayout(40);
+    }
+
+    &-paragraph {
+        margin-bottom: matchingLayout(40);
+    }
+
+    &-list {
+        margin-bottom: matchingLayout(40);
+        margin-right: matchingLayout(80);
+        padding-left: matchingLayout(32);
+        border-left: matchingLayout(3) solid #0099ff;
+
+        .packages-list {
+            &__item {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                column-gap: matchingLayout(16);
+                margin-bottom: matchingLayout(32);
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                &-svg {
+                    width: matchingLayout(70);
+                    height: matchingLayout(70);
+                }
+
+                .item-text {
+                    &__title {
+                        font-size: fontSizeUniversal(16px, 28, 48px);
+                    }
+
+                    &__subtitle {
+                        font-size: fontSizeUniversal(14px, 20, 46px);
+                        overflow-wrap: break-word;
+                    }
+                }
+            }
+            
+        }
+    }
+
+}

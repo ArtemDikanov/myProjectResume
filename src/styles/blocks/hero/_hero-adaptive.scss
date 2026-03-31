@@ -1,28 +1,26 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
 @media (max-width: 500px) {
-    /* .hero-block {
-        height: 100dvh;
-    } */
+    .hero-block {
+        &__main {
+            flex-direction: column;
 
-    .hero-block__main {
-        flex-direction: column;
-        /* margin-top: 25vh; */
+            .text-block {
+                align-items: center;
+                text-align: center;
+            }
 
-        .text-block {
-            text-align: center;
-        }
+            .videolinkDesktop {
+                display: none;
+            }
 
-        .videolinkDesktop {
-            display: none;
-        }
+            .videolinkMobile {
+                display: block;
+            }
 
-        .videolinkMobile {
-            display: block;
-        }
-
-        .hero-button__svg {
-            display: none;
+            .hero-button__svg {
+                display: none;
+            }
         }
     }
 }

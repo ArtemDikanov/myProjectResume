@@ -1,9 +1,9 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
-.about-block__information-button {
+.packages-block__information-button {
         @include flex;
         column-gap: matchingLayout(16);
-        min-width: matchingLayout(249);
+        min-width: matchingLayout(362);
         min-height: matchingLayout(66);
         margin-bottom: 3%;
         padding: matchingLayout(16) matchingLayout(40);

@@ -23,3 +23,15 @@
 @use 'blocks/about/about-dialog';
 @use 'blocks/about/about-adaptive';
 
+@use 'blocks/destinations/destinations';
+@use 'blocks/destinations/destinations-header';
+@use 'blocks/destinations/destinations-pictures';
+@use 'blocks/destinations/destinations-galleryMarkers';
+@use 'blocks/destinations/destinations-adaptive';
+
+@use 'blocks/packages/packages.scss';
+@use 'blocks/packages/packages-information';
+@use 'blocks/packages/packages-pictures';
+@use 'blocks/packages/packages-button';
+@use 'blocks/packages/packages-dialog';
+@use 'blocks/packages/packages-adaptive';

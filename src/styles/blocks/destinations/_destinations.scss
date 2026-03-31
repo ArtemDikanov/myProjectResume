@@ -1,0 +1,10 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.destinations-block {
+    @include flex;
+    flex-direction: column;
+    padding: matchingLayout(100) matchingLayout(80);
+    font-family: var(--font-family-base);
+    color: var(--white-color);
+    background-color: var(--dark-blue-color);
+}

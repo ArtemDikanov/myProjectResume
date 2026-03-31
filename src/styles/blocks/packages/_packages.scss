@@ -1,8 +1,9 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
-.about-block {
+.packages-block {
     @include flex;
     height: 100%;
+    /* padding: matchingLayout(100) matchingLayout(80); */
     font-family: var(--font-family-base);
     color: var(--white-color);
     background-color: var(--dark-color);

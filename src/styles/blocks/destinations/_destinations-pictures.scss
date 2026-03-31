@@ -1,0 +1,17 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.destinations-block__pictures {
+    @include flex;
+    padding: matchingLayout(40) matchingLayout(0);
+
+    .destinations-gallery {
+        @include flex;
+        column-gap: matchingLayout(16);
+
+        &__img {
+            width: matchingLayout(308);
+            height: matchingLayout(440);
+            border-radius: var(--border-radius);
+        }
+    }
+}

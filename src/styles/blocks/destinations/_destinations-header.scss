@@ -1,0 +1,17 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.destinations-block__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .header-text__title {
+        font-size: fontSizeUniversal(18px, 36, 50px);
+    }
+    
+    &-buttons {
+        @include flex;
+        column-gap: matchingLayout(16);
+    }
+}
