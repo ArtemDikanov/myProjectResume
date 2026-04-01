@@ -1,0 +1,17 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.testimonial-block__pictures {
+    @include flex;
+    padding: matchingLayout(40) matchingLayout(0);
+
+    .testimonial-gallery {
+        @include flex;
+        column-gap: matchingLayout(16);
+
+        &__img {
+            width: matchingLayout(308);
+            height: matchingLayout(440);
+            border-radius: var(--border-radius);
+        }
+    }
+}

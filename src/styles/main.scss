@@ -2,6 +2,7 @@
 @use 'globals';
 @use 'normalize';
 @use 'variables';
+@use 'global-media';
 
 @use 'blocks/header/header';
 @use 'blocks/header/header-input';
@@ -24,9 +25,7 @@
 @use 'blocks/about/about-adaptive';
 
 @use 'blocks/destinations/destinations';
-@use 'blocks/destinations/destinations-header';
 @use 'blocks/destinations/destinations-pictures';
-@use 'blocks/destinations/destinations-galleryMarkers';
 @use 'blocks/destinations/destinations-adaptive';
 
 @use 'blocks/packages/packages.scss';
@@ -35,3 +34,7 @@
 @use 'blocks/packages/packages-button';
 @use 'blocks/packages/packages-dialog';
 @use 'blocks/packages/packages-adaptive';
+
+@use 'blocks/testimonial/testimonial';
+@use 'blocks/testimonial/testimonial-pictures';
+@use 'blocks/testimonial/testimonial-adaptive';

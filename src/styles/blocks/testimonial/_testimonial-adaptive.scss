@@ -1,7 +1,7 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
 @media (max-width: 910px) {
-    .destinations-block__pictures {
+    .testimonial-block__pictures {
         .destinations-gallery {
             &__img {
                 border-radius: 20px;
@@ -11,7 +11,7 @@
 }
 
 @media (max-width: 650px) {
-    .destinations-block__pictures {
+    .testimonial-block__pictures {
         .destinations-gallery {
             column-gap: matchingLayout(30);
             &__img {
@@ -28,14 +28,14 @@
 }
 
 @media (max-width: 400px) {
-    .destinations-block__pictures {
-        .destinations-gallery {
+    .testimonial-block__pictures {
+        .testimonial-gallery {
             &__img {
                 width: calc(matchingLayout(308) * 2 );
                 height: calc(matchingLayout(440) * 2 );
                 border-radius: 10px;
 
-                &-2 {
+                &-2, &-3 {
                     display: none;
                 }
             }

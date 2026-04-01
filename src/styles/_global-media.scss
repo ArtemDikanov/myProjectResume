@@ -1,0 +1,54 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+@media (max-width: 1100px) {
+    .arrowLeftButton, .arrowRightButton {
+        width: matchingLayout(100);
+        height: matchingLayout(100);
+    }
+}
+
+
+@media (max-width: 910px) {
+    .arrowLeftButton, .arrowRightButton {
+        width: matchingLayout(120);
+        height: matchingLayout(120);
+    }
+}
+
+
+@media (max-width: 650px) {
+    .header-slider {
+        flex-direction: column;
+
+        &__text-title, &__text-subtitle {
+            text-align: center;
+        }
+    }
+
+    .arrowLeftButton, .arrowRightButton {
+        width: matchingLayout(150);
+        height: matchingLayout(150);
+    }
+
+    .slider-galleryMarkers {
+        &__1, &__2, &__3, &__4 {
+            width: matchingLayout(16);
+            height: matchingLayout(16);
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    .arrowLeftButton, .arrowRightButton {
+        width: matchingLayout(180);
+        height: matchingLayout(180);
+    }
+
+    .slider-galleryMarkers {
+        &__1, &__2, &__3, &__4 {
+            width: matchingLayout(20);
+            height: matchingLayout(20);
+        }
+    }
+}
