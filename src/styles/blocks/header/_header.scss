@@ -28,39 +28,6 @@
             column-gap: matchingLayout(40);
             padding-right: matchingLayout(80);
 
-            .link {
-                position: relative;
-                display: inline-flex;
-                align-items: center;
-                height: fontSizeUniversal(14px, 28, 48px);
-                white-space: nowrap;
-                text-decoration: none;
-
-                @include hover {
-                    &::after {
-                        width: 100%;
-                    }
-                }
-
-                &:visited {
-                    color: var(--dark-color);
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 100%;
-                    left: 0%;
-                    translate: 0%;
-                    width: 0;
-                    height: 2px;
-                    background-color: currentColor;
-                    transition-duration: 0.3s;
-                }
-
-
-            }
-
             .visually-hidden {
                 display: none;
             }

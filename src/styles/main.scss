@@ -20,7 +20,6 @@
 @use 'blocks/about/about-pictures';
 @use 'blocks/about/about-information';
 @use 'blocks/about/about-button';
-@use 'blocks/about/about-arrowButtons';
 @use 'blocks/about/about-dialog';
 @use 'blocks/about/about-adaptive';
 
@@ -38,3 +37,12 @@
 @use 'blocks/testimonial/testimonial';
 @use 'blocks/testimonial/testimonial-pictures';
 @use 'blocks/testimonial/testimonial-adaptive';
+
+@use 'blocks/contact/contact';
+@use 'blocks/contact/contact-email';
+@use 'blocks/contact/contact-adaptive';
+
+@use 'blocks/footer/footer';
+@use 'blocks/footer/footer-myContact';
+@use 'blocks/footer/footer-links';
+@use 'blocks/footer/footer-adaptive';

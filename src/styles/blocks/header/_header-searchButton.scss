@@ -1,12 +1,12 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
-.header__searchButton {
+.header__search-button {
     background: none;
     border: none;
     padding-top: calc(fontSize(14) / 2);
 
     @include hover {
-        .colorSearch {
+        .color-search {
             stroke: var(--light-blue-color);
             transition: 0.3s;
         }
@@ -18,6 +18,6 @@
     }
 }
 
-.colorSearch {
+.color-search {
     stroke: var(--dark-color);
 }

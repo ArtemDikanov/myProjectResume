@@ -5,11 +5,38 @@
 }
 
 .link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: fontSizeUniversal(14px, 28, 48px);
+    text-decoration: none;
     white-space: nowrap;
+
+    &:visited {
+        color: currentColor;
+    }
+
+    @include hover {
+        &::after {
+            width: 100%;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        translate: 0%;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition-duration: 0.3s;
+    }
 }
 
 
-.greyButton {
+.grey-button {
     @include flex;
     font-family: var(--font-family-base);
     font-size: fontSizeUniversal(14px, 24, 48px);
@@ -62,7 +89,7 @@
 }
 
 
-.arrowLeftButton, .arrowRightButton {
+.arrow-left-button, .arrow-right-button {
     @include flex;
     min-width: matchingLayout(60);
     min-height: matchingLayout(60);
@@ -76,7 +103,7 @@
 }
 
 
-.slider-galleryMarkers {
+.slider-gallery-markers {
     @include flex;
     column-gap: matchingLayout(4);
 

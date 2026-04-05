@@ -1,8 +1,11 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
-.packages-block {
-    @include flex;
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     height: 100%;
+    padding: matchingLayout(80);
     font-family: var(--font-family-base);
     color: var(--white-color);
     background-color: var(--dark-color);

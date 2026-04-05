@@ -1,7 +1,7 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
 @media (max-width: 850px) { 
-    .menu-link.noDialog {
+    .menu-link.not-dialog {
         display: none;
     } 
 

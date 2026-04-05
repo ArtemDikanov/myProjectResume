@@ -1,6 +1,6 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
-.videolinkDesktop {
+.video-link-desktop {
     width: matchingLayout(160);
     height: matchingLayout(160);
     margin-top: 10%;
@@ -17,7 +17,7 @@
     }
 }
 
-.videolinkMobile {
+.video-link-mobile {
     display: none;
     min-width: matchingLayout(323);
     min-height: matchingLayout(82);

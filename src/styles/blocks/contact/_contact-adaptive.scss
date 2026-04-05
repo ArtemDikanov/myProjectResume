@@ -1,0 +1,102 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+@media (max-width: 900px) {
+    .contact-block__email-button {
+        border-radius: 13px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-block__email-button {
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-block {
+        flex-direction: column;
+        row-gap: matchingLayout(30);
+
+        &__email {
+            width: matchingLayout(956);
+            height: matchingLayout(112);
+
+            &-input {
+                width: matchingLayout(731);
+                height: 100%;
+                font-size: fontSizeUniversal(13px, 20, 48px);
+
+                &::placeholder {
+                    font-size: fontSizeUniversal(13px, 20, 48px);
+                }
+            }
+
+            &-button {
+                width: matchingLayout(285);
+                height: matchingLayout(86);
+            }
+        }
+
+        &__text-title {
+            text-align: center;
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .contact-block {
+        flex-direction: column;
+        row-gap: matchingLayout(60);
+
+        &__email {
+            width: matchingLayout(1056);
+            height: matchingLayout(112);
+
+            &-input {
+                width: matchingLayout(831);
+                height: 100%;
+                font-size: fontSizeUniversal(12px, 20, 48px);
+
+                &::placeholder {
+                    font-size: fontSizeUniversal(12px, 20, 48px);
+                }
+            }
+
+            &-button {
+                width: matchingLayout(385);
+                height: matchingLayout(96);
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 390px) {
+    .contact-block {
+        flex-direction: column;
+        row-gap: matchingLayout(90);
+
+        &__email {
+            width: matchingLayout(1256);
+            height: matchingLayout(142);
+
+            &-input {
+                width: matchingLayout(1031);
+                height: 100%;
+                font-size: fontSizeUniversal(12px, 20, 48px);
+
+                &::placeholder {
+                    font-size: fontSizeUniversal(12px, 20, 48px);
+                }
+            }
+
+            &-button {
+                width: matchingLayout(485);
+                height: matchingLayout(116);
+                border-radius: 8px;
+            }
+        }
+    }
+}
