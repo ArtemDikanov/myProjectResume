@@ -9,14 +9,15 @@ clickBurger();
 
 import { dialogOpen, dialogClose } from './header-dialog';
 
+import {loadСarousel} from './carousel';
+
+loadСarousel();
+
+import {browsingCarousel} from './browsingCarousel';
+
+browsingCarousel()
 
 
-
-/* import { sliderGallery } from './about-slider';
-
-if (window.matchMedia('(max-width: 800px)').matches) {
-    sliderGallery();
-} */
 
 
 

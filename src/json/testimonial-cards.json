@@ -1,0 +1,46 @@
+{
+    "cards" : [
+        {
+            "name": "Michael Wong",
+            "image": "client-image1",
+            "numberStars": 4,
+            "text": "Awesome dive spots with crystal clear water and plenty of marine life. The gear was solid and the guide knew his stuff. Dropping one star only because the boat felt a bit cramped for our group. Still, an unforgettable experience — would definitely recommend.",
+            "description": "A young man"
+        },
+        {
+            "name": "Avril Song",
+            "image": "client-image2",
+            "numberStars": 4,
+            "text": "Such a magical experience swimming with sea turtles and colorful fish! The team was friendly and made me feel safe as a beginner. Giving 4 stars because the briefing felt a little rushed before the dive. Otherwise, stunning views and great value for money.",
+            "description": "A young girl"
+        },
+        {
+            "name": "Jeane Wood",
+            "image": "client-image3",
+            "numberStars": 5,
+            "text": "Absolutely flawless experience from start to finish. Professional, attentive staff, pristine equipment, and the underwater scenery was breathtaking — like swimming in an aquarium. They even accommodated my request for a smaller group. One of the best dives of my life. Highly recommend!",
+            "description": "A young man"
+        },
+        {
+            "name": "Michael Wong",
+            "image": "client-image1",
+            "numberStars": 4,
+            "text": "Awesome dive spots with crystal clear water and plenty of marine life. The gear was solid and the guide knew his stuff. Dropping one star only because the boat felt a bit cramped for our group. Still, an unforgettable experience — would definitely recommend.",
+            "description": "A young man"
+        },
+        {
+            "name": "Michael Wong",
+            "image": "client-image1",
+            "numberStars": 4,
+            "text": "Awesome dive spots with crystal clear water and plenty of marine life. The gear was solid and the guide knew his stuff. Dropping one star only because the boat felt a bit cramped for our group. Still, an unforgettable experience — would definitely recommend.",
+            "description": "A young man"
+        },
+        {
+            "name": "Michael Wong",
+            "image": "client-image1",
+            "numberStars": 4,
+            "text": "Awesome dive spots with crystal clear water and plenty of marine life. The gear was solid and the guide knew his stuff. Dropping one star only because the boat felt a bit cramped for our group. Still, an unforgettable experience — would definitely recommend.",
+            "description": "A young man"
+        }
+    ]
+}

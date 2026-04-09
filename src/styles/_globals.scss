@@ -107,18 +107,16 @@
     @include flex;
     column-gap: matchingLayout(4);
 
-    &__1, &__2, &__3, &__4 {
+    &__dot {
         width: matchingLayout(8);
         height: matchingLayout(8);
         border-radius: 50%;
-    }
-
-    &__1 {
         background-color: var(--white-color);
     }
-
-    &__2, &__3, &__4 {
+    
+    &-active {
         background-color: rgba(255, 255, 255, 0.16);
     }
 }
+
 
