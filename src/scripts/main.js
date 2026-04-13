@@ -9,13 +9,16 @@ clickBurger();
 
 import { dialogOpen, dialogClose } from './header-dialog';
 
-import {loadСarousel} from './carousel';
+import { newCarousel } from './newCarousel';
 
-loadСarousel();
+newCarousel(".destinations-gallery",
+            ".destinations-block__header-button-right",
+            ".destinations-block__header-button-left",
+            ".destinations-block__gallery-markers",
+            "destinations-block__gallery-marker",
+            "./src/json/destinations-cards.json");
 
-import {browsingCarousel} from './browsingCarousel';
 
-browsingCarousel()
 
 
 

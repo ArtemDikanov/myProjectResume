@@ -8,7 +8,7 @@ export function browsingCarousel() {
     // 2. Переменные состояния
     let currentIndex = 0;
     let cardWidth = window.innerWidth / (1440 / 308);
-    let gap = window.innerWidth / (1440 / 16); // Должно совпадать с gap в CSS (.carousel)
+    let gap = window.innerWidth / (1440 / 16); 
 
     // 3. Функция для определения количества видимых карточек
     function getVisibleCards() {

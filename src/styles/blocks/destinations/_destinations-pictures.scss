@@ -3,22 +3,24 @@
 .destinations-block__pictures {
     position: relative;
     @include flex;
-    padding: matchingLayout(40) matchingLayout(0);
+    padding: matchingLayout(40) matchingLayout(100);
+    
 
     .destinations-gallery {
+        position: relative;
         @include flex;
         gap: matchingLayout(16);
-        overflow-x: hidden;
+        overflow-x: scroll;
         scroll-behavior: smooth;
-        flex: 1;
+        /* flex: 1; */
 
         &__card {
             position: relative;
             width: matchingLayout(308);
             height: matchingLayout(440);
             border-radius: var(--border-radius);
-            overflow: hidden;
-            flex-shrink: 0;
+            /* overflow: hidden; */
+           /*  flex-shrink: 0; */
 
             &-img {
                 width: 100%;
