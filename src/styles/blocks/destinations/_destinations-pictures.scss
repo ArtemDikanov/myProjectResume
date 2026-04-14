@@ -3,24 +3,36 @@
 .destinations-block__pictures {
     position: relative;
     @include flex;
-    padding: matchingLayout(40) matchingLayout(100);
+    /* padding: matchingLayout(40) matchingLayout(100); */
+    overflow: hidden;
+    width: 100%;
     
 
     .destinations-gallery {
+        display: flex;
+        align-items: center;
         position: relative;
-        @include flex;
         gap: matchingLayout(16);
-        overflow-x: scroll;
+        overflow-x: auto;
         scroll-behavior: smooth;
-        /* flex: 1; */
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        padding-bottom: 20px; 
+        margin-bottom: -20px; 
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
 
         &__card {
             position: relative;
             width: matchingLayout(308);
             height: matchingLayout(440);
             border-radius: var(--border-radius);
-            /* overflow: hidden; */
-           /*  flex-shrink: 0; */
+            overflow: hidden; 
+            flex-shrink: 0; 
+            scroll-snap-align: start;
 
             &-img {
                 width: 100%;

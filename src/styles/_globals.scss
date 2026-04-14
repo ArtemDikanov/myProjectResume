@@ -78,7 +78,7 @@
     align-items: center;
     width: 100%;
 
-    .header-slider__text-title {
+    &__text-title {
         font-size: fontSizeUniversal(18px, 36, 50px);
     }
     
@@ -106,16 +106,17 @@
 .slider-gallery-markers {
     @include flex;
     column-gap: matchingLayout(4);
+    margin-top: matchingLayout(40);
 
-    &__dot {
+    .gallery-dot {
         width: matchingLayout(8);
         height: matchingLayout(8);
         border-radius: 50%;
-        background-color: var(--white-color);
+        background-color: rgba(255, 255, 255, 0.16);
     }
     
-    &-active {
-        background-color: rgba(255, 255, 255, 0.16);
+    .gallery-dot-active {
+        background-color: var(--white-color);
     }
 }
 

@@ -1,9 +1,12 @@
-export function scrollToSlide(nameGallery, currentIndex, cardWidth) {
+export function scrollToSlide(nameGallery, targetIndex) {
     const gallery = document.querySelector(nameGallery);
-    const scrollPosition = currentIndex * cardWidth;
-    gallery.scrollTo({
-        top: 0,
-        left: scrollPosition,
-        behavior: 'smooth'
+    const cards = gallery.children;
+    if (cards.length === 0 || targetIndex < 0 || targetIndex >= cards.length) {
+        return;
+    }
+    cards[targetIndex].scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'start'
     });
 }

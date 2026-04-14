@@ -3,7 +3,7 @@
 @media (max-width: 910px) {
     .destinations-block__pictures {
         .destinations-gallery {
-            &__img {
+            &__card {
                 border-radius: 20px;
             }
         }
@@ -14,30 +14,35 @@
     .destinations-block__pictures {
         .destinations-gallery {
             column-gap: matchingLayout(30);
-            &__img {
-                width: calc(matchingLayout(308) * 1.5 );
-                height: calc(matchingLayout(440) * 1.5 );
+            &__card {
+                width: calc(matchingLayout(308) * 1.3 );
+                height: calc(matchingLayout(440) * 1.3 );
                 border-radius: 16px;
 
-                &-3, &-4 {
-                    display: none;
-                }
             }
         }
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 510px) {
     .destinations-block__pictures {
         .destinations-gallery {
-            &__img {
-                width: calc(matchingLayout(308) * 2 );
+            &__card {
+                width: calc(matchingLayout(308) * 2);
                 height: calc(matchingLayout(440) * 2 );
                 border-radius: 10px;
+            }
+        }
+    }
+}
 
-                &-2 {
-                    display: none;
-                }
+@media (max-width: 370px) {
+    .destinations-block__pictures {
+        .destinations-gallery {
+            &__card {
+                width: calc(matchingLayout(308) * 4.1);
+                height: calc(matchingLayout(440) * 4.1 );
+                border-radius: 10px;
             }
         }
     }

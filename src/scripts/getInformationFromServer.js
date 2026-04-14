@@ -6,5 +6,6 @@ export async function getInformationFromServer(api) {
 
     } catch (err) {
         console.error('Произошла ошибка!', err)
+        return;
     }
 }
