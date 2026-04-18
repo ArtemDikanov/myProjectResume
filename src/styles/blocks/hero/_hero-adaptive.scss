@@ -1,5 +1,11 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
+@media (max-width: 800px) {
+    .hero-button {
+        border-radius: 12px;
+    }
+}
+
 @media (max-width: 500px) {
     .hero-block {
         &__main {
@@ -15,11 +21,16 @@
             }
 
             .video-link-mobile {
-                display: block;
+                display: flex;
             }
 
-            .hero-button__svg {
-                display: none;
+            .hero-button {
+                min-width: matchingLayout(723);
+                min-height: matchingLayout(122);
+
+                &__svg {
+                    display: none;
+                }
             }
         }
     }

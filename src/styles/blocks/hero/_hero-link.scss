@@ -19,8 +19,9 @@
 
 .video-link-mobile {
     display: none;
-    min-width: matchingLayout(323);
-    min-height: matchingLayout(82);
+    justify-content: center;
+    min-width: matchingLayout(723);
+    min-height: matchingLayout(122);
     padding: min(matchingLayout(24)) min(matchingLayout(48));
     padding-bottom: min(matchingLayout(24));
     margin-top: 3%;
@@ -30,7 +31,7 @@
     color: var(--white-color);
     font-weight: 400;
     border: var(--border);
-    border-radius: var(--border-radius-button);
+    border-radius: 12px;
     background: var(--grey-color);
     backdrop-filter: var(--blur-filter); 
     white-space: nowrap;

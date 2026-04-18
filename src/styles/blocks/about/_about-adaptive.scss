@@ -3,6 +3,10 @@
 @media (max-width: 957px) {
     .about-block__information {
         margin-top: matchingLayout(20);
+
+        &-button {
+            border-radius: 12px;
+        }
     }
 }
 
@@ -18,6 +22,8 @@
             margin: 0;
 
             &-button {
+                min-width: calc(matchingLayout(249) * 1.5);
+                min-height: calc(matchingLayout(66) * 1.3);
                 margin-top: 3%;
                 margin-bottom: 1%;
 
@@ -65,8 +71,12 @@
 }
 
 @media (max-width: 600px) {
+    .about-block__information {
+        &-subtitle {
+            text-align: center;
+        }
+    }
     .about-block__pictures {
-
         .about-gallery {
 
             &__big {
@@ -88,9 +98,21 @@
     }
 }
 
+@media (max-width: 500px) {
+    .about-block {
+        &__information {
+            &-button {
+                min-width: calc(matchingLayout(249) * 2.5);
+                min-height: calc(matchingLayout(66) * 2);
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
 @media (max-width: 400px) {
     .about-block__pictures {
-
         .about-gallery {
 
             &__big {

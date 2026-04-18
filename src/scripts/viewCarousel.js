@@ -4,25 +4,25 @@ import { renderCards } from './renderCards';
 import { renderDots } from './renderDots';
 import { scrollToSlide } from './scrollToSlide';
 
-export function viewCarousel(nameGallery, nameArrowRight, nameArrowLeft, nameDots, api) {
-    const gallery = document.querySelector(nameGallery);
+export function viewCarousel(nameCarousel, nameArrowRight, nameArrowLeft, nameDots, api) {
+    const carouselContainer = document.querySelector(nameCarousel);
     const arrowRight = document.querySelector(nameArrowRight);
     const arrowLeft = document.querySelector(nameArrowLeft);
     const dotsContainer = document.querySelector(nameDots);
     
-    if (!gallery || !arrowRight || !arrowLeft || !dotsContainer) {
+    if (!carouselContainer || !arrowRight || !arrowLeft || !dotsContainer) {
         return;
     }
 
     let currentIndex = 0;
     let dataFromServer = null;
-    let numberCards = getVisibleCards(nameGallery);
+    let numberCards = getVisibleCards(nameCarousel);
 
     function updateActiveDot() {
-        const cards = gallery.children;
+        const cards = carouselContainer.children;
         if (cards.length === 0) return;
         
-        const containerDistance = gallery.getBoundingClientRect();
+        const containerDistance = carouselContainer.getBoundingClientRect();
         
         let closestIndex = 0;
         let minDistance = Infinity;
@@ -38,9 +38,9 @@ export function viewCarousel(nameGallery, nameArrowRight, nameArrowLeft, nameDot
         
         if (currentIndex !== closestIndex) {
             currentIndex = closestIndex;
-            const dots = dotsContainer.querySelectorAll('.gallery-dot');
+            const dots = dotsContainer.querySelectorAll('.carousel-dot');
             dots.forEach((dot, index) => {
-                dot.classList.toggle('gallery-dot-active', index === currentIndex);
+                dot.classList.toggle('carousel-dot-active', index === currentIndex);
             });
         }
     }
@@ -53,39 +53,39 @@ export function viewCarousel(nameGallery, nameArrowRight, nameArrowLeft, nameDot
             return;
         }
 
-        numberCards = getVisibleCards(nameGallery);
+        numberCards = getVisibleCards(nameCarousel);
         
-        renderCards(nameGallery, dataFromServer);
+        renderCards(nameCarousel, dataFromServer);
 
-        renderDots(nameGallery, nameDots, dataFromServer, numberCards, currentIndex);
+        renderDots(nameCarousel, nameDots, dataFromServer, numberCards, currentIndex);
         
         arrowRight.addEventListener('click', () => {
             const maxIndexClick = dataFromServer.cards.length - numberCards;
             if (currentIndex < maxIndexClick) {
                 currentIndex++;
-                scrollToSlide(nameGallery, currentIndex);
+                scrollToSlide(nameCarousel, currentIndex);
             }
         });
 
         arrowLeft.addEventListener('click', () => {
             if (currentIndex > 0) {
                 currentIndex--;
-                scrollToSlide(nameGallery, currentIndex);
+                scrollToSlide(nameCarousel, currentIndex);
             }
         });
 
-        gallery.addEventListener('scroll', updateActiveDot);
+        carouselContainer.addEventListener('scroll', updateActiveDot);
         
         window.addEventListener('resize', () => {
-            numberCards = getVisibleCards(nameGallery);
+            numberCards = getVisibleCards(nameCarousel);
             
             const maxIndexResize = Math.max(0, dataFromServer.cards.length - numberCards);
             if (currentIndex > maxIndexResize) {
                 currentIndex = maxIndexResize;
             }
             
-            renderDots(nameGallery, nameDots, dataFromServer, numberCards, currentIndex);
-            scrollToSlide(nameGallery, currentIndex);
+            renderDots(nameCarousel, nameDots, dataFromServer, numberCards, currentIndex);
+            scrollToSlide(nameCarousel, currentIndex);
         });
     });
 }

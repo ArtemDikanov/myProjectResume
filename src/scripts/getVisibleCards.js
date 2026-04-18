@@ -1,15 +1,14 @@
-export function getVisibleCards(nameGallery) {
+export function getVisibleCards(nameCarousel) {
     const width = window.innerWidth;
-    if (nameGallery === ".destinations-gallery") {
+    if (nameCarousel === ".destinations-carousel") {
         if (width <= 370) return 1;
         if (width <= 510) return 2;
-        if (width <= 650) return 3;
+        if (width <= 740) return 3;
         return 4;
     }
-    if (nameGallery === ".testimonial-gallery") {
-        if (width <= 480) return 1;
-        if (width <= 768) return 2;
-        if (width <= 1200) return 3;
-        return 4;
+    if (nameCarousel === ".testimonial-carousel") {
+        if (width <= 592) return 1;
+        if (width <= 880) return 2;
+        return 3;
     }  
 }

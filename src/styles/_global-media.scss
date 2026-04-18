@@ -1,10 +1,10 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
 @media (max-width: 2000px) {
-    .slider-gallery-markers {
+    .slider-carousel-markers {
         column-gap: matchingLayout(5);
 
-        .gallery-dot {
+        .carousel-dot {
             width: matchingLayout(10);
             height: matchingLayout(10);
         }
@@ -13,33 +13,30 @@
 
 @media (max-width: 1100px) {
     .arrow-left-button, .arrow-right-button {
-        width: matchingLayout(100);
-        height: matchingLayout(100);
+        width: calc(matchingLayout(80) * 1.3);
+        height: calc(matchingLayout(80) * 1.3);
     }
 
-    .slider-gallery-markers {
+    .slider-carousel-markers {
         column-gap: matchingLayout(7);
 
-        .gallery-dot {
+        .carousel-dot {
             width: matchingLayout(14);
             height: matchingLayout(14);
         }
     }
 }
 
-
-@media (max-width: 910px) {
-    .arrow-left-button, .arrow-right-button {
-        width: matchingLayout(120);
-        height: matchingLayout(120);
-    }
-}
-
 @media (max-width: 850px) {
-    .slider-gallery-markers {
+    .arrow-left-button, .arrow-right-button {
+        width: calc(matchingLayout(80) * 1.5);
+        height: calc(matchingLayout(80) * 1.5);
+    }
+
+    .slider-carousel-markers {
         column-gap: matchingLayout(7);
 
-        .gallery-dot {
+        .carousel-dot {
             width: matchingLayout(14);
             height: matchingLayout(14);
         }
@@ -56,14 +53,14 @@
     }
 
     .arrow-left-button, .arrow-right-button {
-        width: matchingLayout(150);
-        height: matchingLayout(150);
+        width: calc(matchingLayout(80) * 1.7);
+        height: calc(matchingLayout(80) * 1.7);
     }
-
-    .slider-gallery-markers {
+    
+    .slider-carousel-markers {
         column-gap: matchingLayout(10);
 
-        .gallery-dot {
+        .carousel-dot {
             width: matchingLayout(20);
             height: matchingLayout(20);
         }
@@ -71,16 +68,18 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 510px) {
     .arrow-left-button, .arrow-right-button {
-        width: matchingLayout(180);
-        height: matchingLayout(180);
+        width: calc(matchingLayout(80) * 2.5);
+        height: calc(matchingLayout(80) * 2.5);
     }
+}
 
-    .slider-gallery-markers {
+@media (max-width: 400px) {
+    .slider-carousel-markers {
         column-gap: matchingLayout(12);
 
-        .gallery-dot {
+        .carousel-dot {
             width: matchingLayout(23);
             height: matchingLayout(23);
         }
@@ -88,10 +87,14 @@
 }
 
 @media (max-width: 370px) {
-    .slider-gallery-markers {
+    .arrow-left-button, .arrow-right-button {
+        width: calc(matchingLayout(80) * 3.5);
+        height: calc(matchingLayout(80) * 3.5);
+    }
+    .slider-carousel-markers {
         column-gap: matchingLayout(20);
 
-        .gallery-dot {
+        .carousel-dot {
             width: matchingLayout(35);
             height: matchingLayout(35);
         }

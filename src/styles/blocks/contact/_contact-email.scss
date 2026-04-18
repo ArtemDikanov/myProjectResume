@@ -19,12 +19,12 @@
         border: none;
         outline: none;
         font-family: var(--font-family-contacts);
-        font-size: fontSizeUniversal(12px, 20, 48px);
+        font-size: fontSizeUniversal(14px, 20, 48px);
         color: var(--white-color);
 
         &::placeholder {
             font-family: var(--font-family-contacts);
-            font-size: fontSizeUniversal(12px, 20, 48px);
+            font-size: fontSizeUniversal(14px, 20, 48px);
             color: rgba(255, 255, 255, 0.40);
         }
 

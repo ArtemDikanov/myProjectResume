@@ -1,17 +1,85 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
-.testimonial-block__pictures {
+.testimonial-block__feedback {
+    position: relative;
     @include flex;
-    padding: matchingLayout(40) matchingLayout(0);
+    overflow: hidden;
+    width: 100%;
 
-    .testimonial-gallery {
-        @include flex;
-        column-gap: matchingLayout(16);
+    .testimonial-carousel {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: matchingLayout(16);
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        padding-top: matchingLayout(40);
+        padding-bottom: 20px; 
+        margin-bottom: -20px; 
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
-        &__img {
-            width: matchingLayout(308);
-            height: matchingLayout(440);
+        &__card {
+            position: relative;
+            @include flex;
+            flex-direction: column;
+            gap: matchingLayout(16);
+            width: matchingLayout(416);
+            height: matchingLayout(430);
+            padding: matchingLayout(30) matchingLayout(40)  matchingLayout(64) matchingLayout(40);
             border-radius: var(--border-radius);
+            overflow: hidden; 
+            flex-shrink: 0; 
+            scroll-snap-align: start;
+            background-color: var(--grey-color);
+            border: var(--border);
+
+            .feedback-card-header {
+                @include flex;
+                gap: matchingLayout(16);
+
+                &__photo {
+                    width: matchingLayout(100);
+                    height: matchingLayout(100);
+                }
+
+                &__info {
+                    @include flex;
+                    flex-direction: column;
+                    gap: matchingLayout(16);
+
+                    &-name {
+                        font-size: fontSizeUniversal(14px, 20, 50px);
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 120%;
+                    }
+
+                    &-stars {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: matchingLayout(8);
+
+                        .feedback-stars__star {
+                            width: matchingLayout(24);
+                            height: matchingLayout(24);
+                        }
+                    }
+                }
+            }
+
+            &-paragraph {
+                height: matchingLayout(140);
+                /* align-self: stretch; */
+                font-size: fontSizeUniversal(14px, 16, 50px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+            }
         }
     }
 }

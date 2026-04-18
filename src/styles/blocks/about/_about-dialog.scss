@@ -3,13 +3,13 @@
 .information-dialog {
     height: 80dvh;
     border: none;
-    background: var(--grey-blue-color);
+    color: var(--white-color);
+    background: var(--dark-blue-color);
     font-size: fontSizeUniversal(20px, 30, 48px);
     overflow: visible;
 
     &::backdrop {
-        /* backdrop-filter: var(--blur-filter);  */
-        background: var(--dark-blue-color);
+        background: var(--dark-color);
     }
 
     &__close-button {
@@ -33,7 +33,7 @@
         max-height: 100%; 
 
         &::-webkit-scrollbar {
-            background-color: var(--grey-blue-color);
+            background-color: var(--dark-blue-color);
         }
 
         &::-webkit-scrollbar-thumb {

@@ -3,12 +3,11 @@
 .destinations-block__pictures {
     position: relative;
     @include flex;
-    /* padding: matchingLayout(40) matchingLayout(100); */
     overflow: hidden;
     width: 100%;
     
 
-    .destinations-gallery {
+    .destinations-carousel {
         display: flex;
         align-items: center;
         position: relative;
@@ -17,6 +16,7 @@
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
         scrollbar-width: none;
+        padding-top: matchingLayout(40);
         padding-bottom: 20px; 
         margin-bottom: -20px; 
         
@@ -34,19 +34,52 @@
             flex-shrink: 0; 
             scroll-snap-align: start;
 
+           /*  @include hover {
+                .destinations-gallery__card-hover-content {
+                    display: flex;
+                    transition: 1s;
+                }
+            } */
+
             &-img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
 
-            &-hover-content {
+            .hover-content {
+                display: flex;
                 position: absolute;
+                flex-direction: column;
                 bottom: 0;
                 left: 0;
                 right: 0;
+                padding: matchingLayout(40);
                 background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
                 color: white;
+
+                &__title {
+                    font-size: fontSizeUniversal(14px, 28, 48px);
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 120%;
+                }
+
+                &__paragraph {
+                    margin-top: matchingLayout(16);
+                    margin-bottom: matchingLayout(16);
+                    font-size: fontSizeUniversal(12px, 20, 40px);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%;
+                }
+
+                &__button {
+                    width: matchingLayout(228);
+                    height: matchingLayout(54);
+                    padding: atchingLayout(16) atchingLayout(40);
+                    font-size: fontSizeUniversal(14px, 16, 40px);
+                }
             }
         }
     }

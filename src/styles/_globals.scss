@@ -91,10 +91,15 @@
 
 .arrow-left-button, .arrow-right-button {
     @include flex;
-    min-width: matchingLayout(60);
-    min-height: matchingLayout(60);
+    width: matchingLayout(80);
+    height: matchingLayout(80);
     background: none;
     border: none;
+
+    &__svg {
+        width: 100%;
+        height: 100%;
+    }
 
     @include hover {
         scale: 110%;
@@ -103,19 +108,19 @@
 }
 
 
-.slider-gallery-markers {
+.slider-carousel-markers {
     @include flex;
     column-gap: matchingLayout(4);
     margin-top: matchingLayout(40);
 
-    .gallery-dot {
+    .carousel-dot {
         width: matchingLayout(8);
         height: matchingLayout(8);
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.16);
     }
     
-    .gallery-dot-active {
+    .carousel-dot-active {
         background-color: var(--white-color);
     }
 }

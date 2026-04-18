@@ -1,14 +1,31 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
 @media (max-width: 900px) {
-    .contact-block__email-button {
+    .contact-block__email {
+        width: calc(matchingLayout(656) * 1.2);
+        height: calc(matchingLayout(82) * 1.2);
         border-radius: 13px;
+
+        &-input {
+            width: calc(matchingLayout(431) * 1.2);
+        }
+
+        &-button {
+            width: calc(matchingLayout(185) * 1.2);
+            height: calc(matchingLayout(66) * 1.2);
+            border-radius: 13px;
+        }
     }
+        
 }
 
 @media (max-width: 700px) {
-    .contact-block__email-button {
+    .contact-block__email {
         border-radius: 10px;
+
+        &-button {
+            border-radius: 10px;
+        }
     }
 }
 
@@ -18,22 +35,16 @@
         row-gap: matchingLayout(30);
 
         &__email {
-            width: matchingLayout(956);
-            height: matchingLayout(112);
+            width: calc(matchingLayout(656) * 1.6);
+            height: calc(matchingLayout(82) * 1.6);
 
             &-input {
-                width: matchingLayout(731);
-                height: 100%;
-                font-size: fontSizeUniversal(13px, 20, 48px);
-
-                &::placeholder {
-                    font-size: fontSizeUniversal(13px, 20, 48px);
-                }
+                width: calc(matchingLayout(431) * 1.6);
             }
 
             &-button {
-                width: matchingLayout(285);
-                height: matchingLayout(86);
+                width: calc(matchingLayout(185) * 1.6);
+                height: calc(matchingLayout(66) * 1.6);
             }
         }
 
@@ -50,22 +61,17 @@
         row-gap: matchingLayout(60);
 
         &__email {
-            width: matchingLayout(1056);
-            height: matchingLayout(112);
+            width: calc(matchingLayout(656) * 1.8);
+            height: calc(matchingLayout(82) * 1.8);
+            border-radius: 8px;
 
             &-input {
-                width: matchingLayout(831);
-                height: 100%;
-                font-size: fontSizeUniversal(12px, 20, 48px);
-
-                &::placeholder {
-                    font-size: fontSizeUniversal(12px, 20, 48px);
-                }
+                width: calc(matchingLayout(431) * 1.8);
             }
 
             &-button {
-                width: matchingLayout(385);
-                height: matchingLayout(96);
+                width: calc(matchingLayout(185) * 1.8);
+                height: calc(matchingLayout(66) * 1.8);
                 border-radius: 8px;
             }
         }
@@ -79,23 +85,16 @@
         row-gap: matchingLayout(90);
 
         &__email {
-            width: matchingLayout(1256);
-            height: matchingLayout(142);
-
+            width: calc(matchingLayout(656) * 2);
+            height: calc(matchingLayout(82) * 2.3);
+           
             &-input {
-                width: matchingLayout(1031);
-                height: 100%;
-                font-size: fontSizeUniversal(12px, 20, 48px);
-
-                &::placeholder {
-                    font-size: fontSizeUniversal(12px, 20, 48px);
-                }
+                width: calc(matchingLayout(431) * 2);
             }
 
             &-button {
-                width: matchingLayout(485);
-                height: matchingLayout(116);
-                border-radius: 8px;
+                width: calc(matchingLayout(185) * 3);
+                height: calc(matchingLayout(66) * 2.3);
             }
         }
     }

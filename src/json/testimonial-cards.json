@@ -22,25 +22,25 @@
             "description": "A young man"
         },
         {
-            "name": "Michael Wong",
-            "image": "client-image1",
-            "numberStars": 4,
-            "text": "Awesome dive spots with crystal clear water and plenty of marine life. The gear was solid and the guide knew his stuff. Dropping one star only because the boat felt a bit cramped for our group. Still, an unforgettable experience — would definitely recommend.",
-            "description": "A young man"
+            "name": "William Murderface",
+            "image": "client-image4",
+            "numberStars": 1,
+            "text": "This was total garbage. I went down there to feel something, maybe get attacked by a shark or drown dramatically, but no. Just a bunch of happy fish and coral. The dive instructor kept smiling at me. Disgusting. The water pressure didn’t even crush my organs right. One star because I can’t give zero. Murderface does not recommend.",
+            "description": "The hero of the series Metalocalypse William Murderface"
         },
         {
-            "name": "Michael Wong",
-            "image": "client-image1",
-            "numberStars": 4,
-            "text": "Awesome dive spots with crystal clear water and plenty of marine life. The gear was solid and the guide knew his stuff. Dropping one star only because the boat felt a bit cramped for our group. Still, an unforgettable experience — would definitely recommend.",
-            "description": "A young man"
+            "name": "Nathan Explosion",
+            "image": "client-image5",
+            "numberStars": 2,
+            "text": "Brutal in theory. Underwater. Silence. Death all around. But in practice… not brutal. Too many colors. Fish were being friendly. The guide asked if I was 'having fun.' Fun? No. Give me a shipwreck with skeletons. Two stars for the cold water and the one moment I thought my regulator was failing. False alarm. Weak.",
+            "description": "The hero of the series Metalocalypse Nathan Explosion"
         },
         {
-            "name": "Michael Wong",
-            "image": "client-image1",
-            "numberStars": 4,
-            "text": "Awesome dive spots with crystal clear water and plenty of marine life. The gear was solid and the guide knew his stuff. Dropping one star only because the boat felt a bit cramped for our group. Still, an unforgettable experience — would definitely recommend.",
-            "description": "A young man"
+            "name": "Pickles",
+            "image": "client-image6",
+            "numberStars": 3,
+            "text": "Alright, so, the diving part was kinda cool — saw some weird fish, felt like I was in a music video for like five minutes. But the boat left at 8 AM, man. Eight in the morning. No beer on board. The gear smelled like someone else’s wetsuit farts. Guide was nice but way too chipper. Three stars for the vibes underwater, but come on, where’s the after-party? Not brutal, not amazing — just… medium.",
+            "description": "The hero of the series Metalocalypse Pickles"
         }
     ]
 }

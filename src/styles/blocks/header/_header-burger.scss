@@ -21,17 +21,20 @@
 }
 
 
-.header__burger.active .line1 {
+.header__burger.active .line-1 {
     transform: translateY(0px) translateX(8.5px) rotate(45deg);
+    will-change: transform;
 }
         
-.header__burger.active .line2 {
+.header__burger.active .line-2 {
     opacity: 0;
     transform: scale(0);
+    will-change: transform;
 }
         
-.header__burger.active .line3 {
+.header__burger.active .line-3 {
     transform: translateY(8.5px) translateX(-8.5px) rotate(-45deg);
+    will-change: transform;
 }
 
 

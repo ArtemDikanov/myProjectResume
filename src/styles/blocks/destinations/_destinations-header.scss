@@ -1,0 +1,11 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.header-slider__text {
+    &-title {
+        font-size: fontSizeUniversal(18px, 36, 50px);
+    }
+
+    &-subtitle {
+        font-size: fontSizeUniversal(16px, 24, 48px);
+    }
+}
