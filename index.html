@@ -15,11 +15,11 @@
         </div>
         <nav class="header__menu">
           <ul class="header__menu-list">
-            <li class="header__menu-item menu-link not-dialog"><a href="" class="link">About us</a></li>
-            <li class="header__menu-item menu-link not-dialog"><a href="" class="link">Destinations</a></li>
-            <li class="header__menu-item menu-link not-dialog"><a href="" class="link">Packages</a></li>
-            <li class="header__menu-item menu-link not-dialog"><a href="" class="link">Testimonial</a></li>
-            <li class="header__menu-item menu-link not-dialog"><a href="" class="link">Contact Us</a></li>
+            <li class="header__menu-item menu-link not-dialog"><a href="#about-block" class="link-header">About us</a></li>
+            <li class="header__menu-item menu-link not-dialog"><a href="#destinations-block" class="link-header">Destinations</a></li>
+            <li class="header__menu-item menu-link not-dialog"><a href="#packages-block" class="link-header">Packages</a></li>
+            <li class="header__menu-item menu-link not-dialog"><a href="#testimonial-block" class="link-header">Testimonial</a></li>
+            <li class="header__menu-item menu-link not-dialog"><a href="#contact-block" class="link-header">Contact Us</a></li>
             <li class="header__menu-item">
               <button class="header__burger">
                   <svg  class="header__burger-svg" viewBox="0 0 24 24" width="27" height="27">
@@ -89,7 +89,7 @@
             </svg>
         </a>
         <a class="hero-block__main-video-link video-link-mobile" href="https://vkvideo.ru/video-227203050_456239050?sh=4" target="_blank" title="Beautiful video about the underwater world in VK Video" rel="noopener noreferrer">Watch video</a>
-        <a href="/" class="hero-block__main-button hero-button grey-button">
+        <a href="#contact-block" class="hero-block__main-button hero-button grey-button">
             <svg class="hero-button__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.12833 11.0358C7.16833 15.045 10.455 18.3175 14.4642 20.3717L17.5808 17.255C17.9633 16.8725 18.53 16.745 19.0258 16.915C20.6125 17.4392 22.3267 17.7225 24.0833 17.7225C24.8625 17.7225 25.5 18.36 25.5 19.1392V24.0833C25.5 24.8625 24.8625 25.5 24.0833 25.5C10.7808 25.5 0 14.7192 0 1.41667C0 0.6375 0.6375 0 1.41667 0H6.375C7.15417 0 7.79167 0.6375 7.79167 1.41667C7.79167 3.1875 8.075 4.8875 8.59917 6.47417C8.755 6.97 8.64167 7.5225 8.245 7.91917L5.12833 11.0358Z" fill="white"/>
             </svg>
@@ -98,7 +98,7 @@
       </div>
     </section>
     <main class="main">
-      <section class="about-block">
+      <section class="about-block" id="about-block">
         <div class="about-block__pictures">
           <div class="about-block__pictures-gallery about-gallery">
             <img class="about-gallery__big" src="./src/images/aboutUsSection-image1.jpg" loading="lazy" alt="Человек под водой всплывает">
@@ -115,7 +115,7 @@
           <p class="about-block__information-paragraph paragraph">
             There is a world hidden beneath the shimmering surface of the sea—a realm of eerie shipwrecks, vibrant coral gardens, and ancient geological formations that few have ever witnessed firsthand. We are here to change that. Specializing in bespoke underwater excursions, we offer more than just a dive; we offer a journey into the heart of the ocean’s mysteries...
           </p>
-          <button class="about-block__information-button information-button grey-button" onclick="window.aboutBlockDialog.showModal()">
+          <button class="about-block__information-button information-button grey-button">
             Read more
             <svg class="information-button__svg" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1219_283)">
@@ -129,20 +129,20 @@
               </defs>
             </svg>
           </button>
-          <dialog class="about-block__information-dialog information-dialog" id="aboutBlockDialog" aria-labelledby="aboutBlockDialog">
-            <button class="information-dialog__close-button" onclick="window.aboutBlockDialog.close()">                
-              <svg class="information-dialog__close-button-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <dialog class="about-block__about-dialog about-dialog" id="aboutBlockDialog" aria-labelledby="aboutBlockDialog">
+            <button class="about-dialog__close-button dialog-close-button">                
+              <svg class="about-dialog__close-button-svg dialog-close-button__svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 20L4 4.00003M20 4L4.00002 20" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
               </svg>               
             </button>
-            <div class="information-dialog__text">
+            <div class="about-dialog__text">
               Forget the crowded dive sites and impersonal group tours. Our philosophy is built on intimacy and discovery. Whether you are a certified diver looking to explore untouched caverns or a first-time snorkeler hoping to float above a kaleidoscope of marine life, we curate every detail to match your comfort and skill level. Guided by our team of professional marine biologists and master divers, you won’t just see fish—you will learn the secrets of the ecosystem, the history of the wrecks below your fins, and the delicate balance of this aquatic universe.
               Safety is our anchor, but wonder is our compass. We utilize top-of-the-line equipment and maintain the highest safety standards, ensuring that your experience is as seamless as it is breathtaking. From the moment you step aboard our vessels, you are not just a tourist; you are an explorer. Let us take you to where the wild things are. The surface is just the beginning.
             </div>
           </dialog>
         </div>
       </section>
-      <section class="destinations-block">
+      <section class="destinations-block" id="destinations-block">
         <div class="destinations-block__header header-slider">
           <div class="destinations-block__header-text header-slider__text">
             <h2 class="header-slider__text-title">Destinations</h2>
@@ -202,10 +202,10 @@
           <div class="destinations-block__pictures-carousel destinations-carousel">
           </div>
         </div>
-        <div class="destinations-block__carousel-markers slider-carousel-markers">
+        <div class="destinations-block__carousel-markers carousel-markers">
         </div>
       </section>
-      <section class="packages-block">
+      <section class="packages-block" id="packages-block">
         <div class="packages-block__information">
           <h2 class="packages-block__information-title">Packages</h2>
           <h3 class="packages-block__information-subtitle subtitle">
@@ -217,54 +217,21 @@
           <div class="packages-block__information-list packages-container-list">
             <ul class="packages-container-list__list packages-list">
               <li class="packages-list__item">
-                <svg class="packages-list__item-svg"  viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1219_409)">
-                  <path opacity="0.12" d="M35 61.25C49.4975 61.25 61.25 49.4975 61.25 35C61.25 20.5025 49.4975 8.75 35 8.75C20.5025 8.75 8.75 20.5025 8.75 35C8.75 49.4975 20.5025 61.25 35 61.25Z" fill="white"/>
-                  <path d="M35 61.25C49.4975 61.25 61.25 49.4975 61.25 35C61.25 20.5025 49.4975 8.75 35 8.75C20.5025 8.75 8.75 20.5025 8.75 35C8.75 49.4975 20.5025 61.25 35 61.25Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M36.0938 48.125V21.875L29.5312 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_1219_409">
-                  <rect width="70" height="70" fill="white"/>
-                  </clipPath>
-                  </defs>
-                </svg>
+                <img src="/src/icons/numberCircleOne-icon.png" alt="" class= "packages-list__item-png">
                 <div class="packages-list__item-text item-text">
                   <h2 class="item-text__title">Golden Package</h2>
                   <h3 class="item-text__subtitle subtitle">Private guide, premium gear, and exclusive sites</h3>
                 </div>
               </li>
               <li class="packages-list__item">
-                <svg class="packages-list__item-svg"  viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1219_414)">
-                  <path opacity="0.12" d="M35 61.25C49.4975 61.25 61.25 49.4975 61.25 35C61.25 20.5025 49.4975 8.75 35 8.75C20.5025 8.75 8.75 20.5025 8.75 35C8.75 49.4975 20.5025 61.25 35 61.25Z" fill="white"/>
-                  <path d="M41.5625 48.125H28.4375L40.2418 32.386C40.8108 31.63 41.2096 30.76 41.4109 29.8356C41.6122 28.9111 41.6112 27.9541 41.408 27.03C41.2049 26.106 40.8043 25.2368 40.2338 24.4821C39.6632 23.7273 38.9363 23.1048 38.1027 22.6573C37.2691 22.2098 36.3486 21.9479 35.4043 21.8894C34.46 21.8309 33.5142 21.9773 32.6317 22.3185C31.7493 22.6598 30.9511 23.1878 30.2918 23.8664C29.6325 24.545 29.1277 25.3581 28.8121 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M35 61.25C49.4975 61.25 61.25 49.4975 61.25 35C61.25 20.5025 49.4975 8.75 35 8.75C20.5025 8.75 8.75 20.5025 8.75 35C8.75 49.4975 20.5025 61.25 35 61.25Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_1219_414">
-                  <rect width="70" height="70" fill="white"/>
-                  </clipPath>
-                  </defs>
-                </svg>
+                <img src="/src/icons/numberCircleTwo-icon.png" alt="" class= "packages-list__item-png">
                 <div class="packages-list__item-text item-text">
                   <h2 class="item-text__title">Silver Package</h2>
                   <h3 class="item-text__subtitle subtitle">Small groups, quality gear, and onboard refreshments</h3>
                 </div>
               </li>
               <li class="packages-list__item">
-                <svg class="packages-list__item-svg"  viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1219_419)">
-                  <path opacity="0.12" d="M35 61.25C49.4975 61.25 61.25 49.4975 61.25 35C61.25 20.5025 49.4975 8.75 35 8.75C20.5025 8.75 8.75 20.5025 8.75 35C8.75 49.4975 20.5025 61.25 35 61.25Z" fill="white"/>
-                  <path d="M28.4375 22.9688H41.5625L33.9062 33.9062C35.1685 33.9064 36.4112 34.2187 37.5236 34.8153C38.636 35.4118 39.5836 36.2742 40.2822 37.3255C40.9807 38.3769 41.4085 39.5847 41.5274 40.8413C41.6463 42.098 41.4526 43.3645 40.9637 44.5283C40.4747 45.692 39.7056 46.7168 38.7248 47.5114C37.744 48.306 36.582 48.8458 35.3422 49.0827C34.1023 49.3196 32.8232 49.2463 31.6185 48.8693C30.4138 48.4923 29.3211 47.8233 28.4375 46.9219" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M35 61.25C49.4975 61.25 61.25 49.4975 61.25 35C61.25 20.5025 49.4975 8.75 35 8.75C20.5025 8.75 8.75 20.5025 8.75 35C8.75 49.4975 20.5025 61.25 35 61.25Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_1219_419">
-                  <rect width="70" height="70" fill="white"/>
-                  </clipPath>
-                  </defs>
-                </svg>
+                <img src="/src/icons/numberCircleThree-icon.png" alt="" class= "packages-list__item-png">
                 <div class="packages-list__item-text item-text">
                   <h2 class="item-text__title">Bronze Package</h2>
                   <h3 class="item-text__subtitle subtitle">Two-tank boat trip with standard equipment</h3>
@@ -272,7 +239,7 @@
               </li>
             </ul>
           </div>
-          <button class="packages-block__information-button information-button grey-button" onclick="window.packagesBlockDialog.showModal()">
+          <button class="packages-block__information-button information-button grey-button">
             View package details
             <svg class="information-button__svg" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1219_283)">
@@ -286,15 +253,43 @@
               </defs>
             </svg>
           </button>
-          <dialog class="about-block__information-dialog information-dialog" id="packagesBlockDialog" aria-labelledby="packagesBlockDialog">
-            <button class="information-dialog__close-button" onclick="window.packagesBlockDialog.close()">                
-              <svg class="information-dialog__close-button-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <dialog class="packages-block__packages-dialog packages-dialog" id="packagesBlockDialog" aria-labelledby="packagesBlockDialog">
+            <button class="packages-dialog__close-button dialog-close-button">                
+              <svg class="packages-dialog__close-button-svg dialog-close-button__svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 20L4 4.00003M20 4L4.00002 20" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
               </svg>               
             </button>
-            <div class="information-dialog__text">
-              Forget the crowded dive sites and impersonal group tours. Our philosophy is built on intimacy and discovery. Whether you are a certified diver looking to explore untouched caverns or a first-time snorkeler hoping to float above a kaleidoscope of marine life, we curate every detail to match your comfort and skill level. Guided by our team of professional marine biologists and master divers, you won’t just see fish—you will learn the secrets of the ecosystem, the history of the wrecks below your fins, and the delicate balance of this aquatic universe.
-              Safety is our anchor, but wonder is our compass. We utilize top-of-the-line equipment and maintain the highest safety standards, ensuring that your experience is as seamless as it is breathtaking. From the moment you step aboard our vessels, you are not just a tourist; you are an explorer. Let us take you to where the wild things are. The surface is just the beginning.
+            <div class="packages-dialog__container">
+              <ul class="packages-dialog__container-list packages-dialog-list">
+                <li class="packages-dialog-list__item">
+                  <img src="/src/icons/numberCircleOne-icon.png" alt="" class="packages-dialog-list__item-png">
+                  <div class="packages-dialog-list__item-text packages-dialog-item-text">
+                    <h2 class="packages-dialog-item-text__title">Golden Package</h2>
+                    <h3 class="packages-dialog-item-text__subtitle subtitle">The ultimate VIP experience featuring private guided dives, premium rental gear, exclusive access to secluded sites, and professional underwater photography.</h3>
+                  </div>
+                </li>
+                <li class="packages-dialog-list__item">
+                  <img src="/src/icons/numberCircleTwo-icon.png" alt="" class="packages-dialog-list__item-png">
+                  <div class="packages-dialog-list__item-text packages-dialog-item-text">
+                    <h2 class="packages-dialog-item-text__title">Silver Package</h2>
+                    <h3 class="packages-dialog-item-text__subtitle subtitle">The perfect balance of value and comfort, including small-group guided tours, high-quality equipment, and complimentary refreshments aboard the boat.</h3>
+                  </div>
+                </li>
+                <li class="packages-dialog-list__item">
+                  <img src="/src/icons/numberCircleThree-icon.png" alt="" class="packages-dialog-list__item-png">
+                  <div class="packages-dialog-list__item-text packages-dialog-item-text">
+                    <h2 class="packages-dialog-item-text__title">Bronze Package</h2>
+                    <h3 class="packages-dialog-item-text__subtitle subtitle">An essential dive package for certified adventurers, covering a two-tank boat trip with standard gear rental and expert briefings.</h3>
+                  </div>
+                </li>
+                <li class="packages-dialog-list__item">
+                  <img src="/src/icons/strangerThings-icon.png" alt="" class="packages-dialog-list__item-png">
+                  <div class="packages-dialog-list__item-text packages-dialog-item-text">
+                    <h2 class="packages-dialog-item-text__title">Stranger Package</h2>
+                    <h3 class="packages-dialog-item-text__subtitle subtitle">Stranger Package: The official Stranger Things x Dive collab — explore the murky depths where strange currents flicker like the Upside Down, complete with themed gear, a retro radio, and a secret dive log signed by Chief Hopper</h3>
+                  </div>
+                </li>
+              </ul>
             </div>
           </dialog>
         </div>
@@ -307,7 +302,7 @@
           </div>
         </div>
       </section>
-      <section class="testimonial-block">
+      <section class="testimonial-block" id="testimonial-block">
         <div class="testimonial-block__header header-slider">
           <div class="testimonial-block__header-text header-slider__text">
             <h2 class="header-slider__text-title">Testimonial</h2>
@@ -367,18 +362,18 @@
           <div class="testimonial-block__feedback-carousel testimonial-carousel">
           </div>
         </div>
-        <div class="testimonial-block__carousel-markers slider-carousel-markers">
+        <div class="testimonial-block__carousel-markers carousel-markers">
         </div>
       </section>
-      <section class="contact-block">
+      <section class="contact-block" id="contact-block">
         <div class="contact-block__text">
           <h2 class="contact-block__text-title">Contact us</h2>
           <h3 class="contact-block__text-subtitle subtitle">Send your email to contact us</h3>
         </div>
-        <div class="contact-block__email">
+        <form class="contact-block__email">
           <input type="email" placeholder="name@domain.com" class="contact-block__email-input">
-          <button class="contact-block__email-button">Send</button>
-        </div>
+          <button type="submit" class="contact-block__email-button">Send</button>
+        </form>
       </section>
     </main>
     <footer class="footer-block">
@@ -407,19 +402,19 @@
           <h3 class="links-quickLinks__title">Quick Links</h3>
           <nav class="links-quickLinks__menu">
             <ul class="links-quickLinks__menu-list">
-              <li class="links-quickLinks__menu-item"><a class="link" href="">About us</a></li>
-              <li class="links-quickLinks__menu-item"><a class="link" href="">Destinations</a></li>
-              <li class="links-quickLinks__menu-item"><a class="link" href="">Packages</a></li>
-              <li class="links-quickLinks__menu-item"><a class="link" href="">Testimonial</a></li>
+              <li class="links-quickLinks__menu-item"><a class="link-footer" href="#about-block">About us</a></li>
+              <li class="links-quickLinks__menu-item"><a class="link-footer" href="#destinations-block">Destinations</a></li>
+              <li class="links-quickLinks__menu-item"><a class="link-footer" href="#packages-block">Packages</a></li>
+              <li class="links-quickLinks__menu-item"><a class="link-footer" href="#testimonial-block">Testimonial</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer-block__links-resources links-resources">
           <h3 class="links-resources__title">Resources</h3>
           <ul class="links-resources__list">
-            <li class="links-resources__item" class="link"><a class="link" href="">Support</a></li>
-            <li class="links-resources__item" class="link"><a class="link" href="">Privacy Policy</a></li>
-            <li class="links-resources__item" class="link"><a class="link" href="">Terms & Conditions</a></li>
+            <li class="links-resources__item"><a class="link-footer" href="#footer-block">Support</a></li>
+            <li class="links-resources__item"><a class="link-footer" href="#footer-block">Privacy Policy</a></li>
+            <li class="links-resources__item"><a class="link-footer" href="#footer-block">Terms & Conditions</a></li>
           </ul>
         </div>
       </div>
@@ -427,9 +422,3 @@
     <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>
-
-
-<!-- <img class="destinations-gallery__img destinations-gallery__img-1" src="./src/images/destinationsSection-image1.jpg" loading="lazy" alt="Человек плывёт рядом с группой оранжевых рыбок">
-<img class="destinations-gallery__img destinations-gallery__img-2" src="./src/images/destinationsSection-image2.jpg" loading="lazy" alt="Желтоватые полосатые рыбы плывут под водой">
-<img class="destinations-gallery__img destinations-gallery__img-3" src="./src/images/destinationsSection-image3.jpg" loading="lazy" alt="Маленькие оранжевые рыбки плывут вдоль большого кораллового скопления">
-<img class="destinations-gallery__img destinations-gallery__img-4" src="./src/images/destinationsSection-image4.jpg" loading="lazy" alt="Сквозь кристально чистую воду видно дно"> -->

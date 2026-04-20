@@ -8,6 +8,11 @@
     margin-top: 3%;
     margin-left: 5%;
     margin-bottom: 3%;
+    color: var(--white-color);
+
+    &:visited, &:hover, &active{
+        color: var(--white-color);
+    }
 
     &__svg {
         width: matchingLayout(25.5);

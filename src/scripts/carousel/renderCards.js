@@ -10,7 +10,7 @@ export function renderCards(nameCarousel, dataFromServer) {
                     <div class="destinations-carousel__card-hover-content hover-content">
                         <h3 class="hover-content__title">${card.title}</h3>
                         <p class="hover-content__paragraph">${card.description}</p>
-                        <button class="hover-content__button grey-button">View details</button>
+                        <button class="hover-content__button grey-button" onclick="alert('You have clicked on the View details button: ${card.title}')">View details</button>
                     </div>
                 </div>
             `;

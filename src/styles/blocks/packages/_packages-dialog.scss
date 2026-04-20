@@ -1,0 +1,58 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.packages-dialog {
+    height: 80dvh;
+    border: none;
+    color: var(--white-color);
+    background: var(--dark-blue-color);
+    font-size: fontSizeUniversal(20px, 30, 48px);
+    overflow: visible;
+
+    &::backdrop {
+        background: var(--dark-color);
+    }
+
+
+    &__container {
+        max-height: 100%; 
+        margin-bottom: matchingLayout(40);
+        padding-left: matchingLayout(32);
+        padding-top: 30px;
+        overflow-y: auto;  
+        
+        &::-webkit-scrollbar {
+            background-color: var(--dark-blue-color);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--dark-color);
+        }
+
+        .packages-dialog-list {
+            &__item {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                column-gap: matchingLayout(16);
+                margin-bottom: matchingLayout(32);
+
+                &-png {
+                    width: matchingLayout(70);
+                    height: matchingLayout(70);
+                }
+
+                .packages-dialog-item-text {
+                    &__title {
+                        font-size: fontSizeUniversal(16px, 28, 48px);
+                    }
+
+                    &__subtitle {
+                        font-size: fontSizeUniversal(14px, 20, 46px);
+                        overflow-wrap: break-word;
+                    }
+                }
+            }
+            
+        }
+    }
+}

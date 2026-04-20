@@ -1,6 +1,6 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
-.information-dialog {
+.about-dialog {
     height: 80dvh;
     border: none;
     color: var(--white-color);
@@ -10,22 +10,6 @@
 
     &::backdrop {
         background: var(--dark-color);
-    }
-
-    &__close-button {
-        position: absolute;
-        min-width: 30px;
-        min-height: 30px;
-        background: none;
-        border: none;
-        top: -60px;
-        right: 0px;
-        margin-top: 25px;
-
-        &-svg {
-            width: 30px;
-            height: 30px;
-        }
     }
 
     &__text {

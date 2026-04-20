@@ -36,5 +36,9 @@
     backdrop-filter: var(--blur-filter); 
     white-space: nowrap;
     text-decoration: none;
+
+    &:visited, &:hover, &active{
+        color: var(--white-color);
+    }
 }
 

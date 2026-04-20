@@ -10,6 +10,16 @@
     }
 }
 
+@media (max-width: 957px) {
+    .about-block__information {
+        margin-top: matchingLayout(20);
+
+        &-button {
+            border-radius: 12px;
+        }
+    }
+}
+
 
 @media (max-width: 910px) {
     .about-block {

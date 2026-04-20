@@ -77,8 +77,18 @@
 }
 
 @media (max-width: 600px) {
+    .packages-dialog {
+        &__container {
+            .packages-dialog-list {
+                &__item {
+                    &-png {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     .packages-block__pictures {
-
         .packages-gallery {
 
             &__big {
@@ -110,7 +120,7 @@
             width: 100%;
             padding-left: matchingLayout(32);
 
-            &__item-svg {
+            &__item-png {
                 display: none;
             }
         }

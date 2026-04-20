@@ -1,7 +1,7 @@
 export function viewInput() {
     const searchButton = document.querySelector('.header__search-button');
-    
-    // Проверяем существование кнопки
+    let inputActive = false;
+   
     if (!searchButton) {
         console.warn('Элемент .header__search-button не найден');
         return;
@@ -10,13 +10,18 @@ export function viewInput() {
     searchButton.addEventListener('click', () => {
             const searchInput = document.querySelector('.header__input');
             const itemInput = document.querySelector('.header__menu-item-input');
-            // Проверяем существование поля ввода
             if (searchInput && itemInput) {
-                searchInput.classList.remove('visually-hidden');
-                itemInput.classList.remove('visually-hidden');
+                if (inputActive === false) {
+                    searchInput.classList.remove('visually-hidden');
+                    itemInput.classList.remove('visually-hidden');
+                    inputActive = true;
+                }
+                else {
+                    alert(`You have entered the search field: ${searchInput.value}`)
+                }
+
             } else {
                 console.warn('Элемент .header__input не найден');
             }
-            
     });
 }
