@@ -1,0 +1,44 @@
+{
+    "cards" : [
+        {
+            "image": "destinationsSection-image1",
+            "title": "Sea of Marmara",
+            "description": "Light blue water with marble-like streaks. Famous for stunning sunsets and connecting the Black Sea to the Aegean"
+        },
+        {
+            "image": "destinationsSection-image2",
+            "title": "Aegean Sea",
+            "description": "Crystal-clear azure water, white volcanic cliffs (e.g., Santorini), and hidden blue caves"
+        },
+        {
+            "image": "destinationsSection-image3",
+            "title": "Coral Sea",
+            "description": "Turquoise water, white sand, and dramatic limestone cliffs. A paradise for snorkeling and wreck diving"
+        },
+        {
+            "image": "destinationsSection-image4",
+            "title": "Caribbean Sea",
+            "description": "Bright turquoise to deep indigo water, white coral beaches, and gentle waves. Perfect for sailing and diving"
+        },
+        {
+            "image": "destinationsSection-image5",
+            "title": "Tyrrhenian Sea",
+            "description": "Deep blue water around Capri and the Amalfi Coast. Famous for the electric-blue Blue Grotto"
+        },
+        {
+            "image": "destinationsSection-image6",
+            "title": "Andaman Sea",
+            "description": "Emerald water with limestone karst islands (Phang Nga Bay) and hidden lagoons. Ideal for kayaking"
+        },
+        {
+            "image": "destinationsSection-image7",
+            "title": "Flores Sea",
+            "description": "Sapphire-blue, exceptionally clear water with underwater volcanoes and manta rays. A top spot for advanced divers"
+        },
+        {
+            "image": "destinationsSection-image8",
+            "title": "Weddell Sea",
+            "description": "Crystal-clear deep blue water, vertical coral walls, and incredible marine biodiversity. Perfect for diving with sea turtles and pristine reefs"
+        }
+    ]
+}
