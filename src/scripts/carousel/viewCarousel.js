@@ -91,7 +91,6 @@ export function viewCarousel(nameCarousel, nameArrowRight, nameArrowLeft, nameDo
             }
             
             renderDots(nameCarousel, nameDots, dataFromServer, numberCards, currentIndex);
-            //scrollToSlide(nameCarousel, currentIndex);
 
         });
     });
