@@ -12,6 +12,7 @@
             flex-direction: column;
 
             .text-block {
+                margin: 0;
                 align-items: center;
                 text-align: center;
             }
@@ -27,6 +28,7 @@
             .hero-button {
                 min-width: matchingLayout(723);
                 min-height: matchingLayout(122);
+                margin-left: 0;
 
                 &__svg {
                     display: none;
