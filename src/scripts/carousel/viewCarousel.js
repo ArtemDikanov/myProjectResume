@@ -9,6 +9,7 @@ export function viewCarousel(nameCarousel, nameArrowRight, nameArrowLeft, nameDo
     const arrowRight = document.querySelector(nameArrowRight);
     const arrowLeft = document.querySelector(nameArrowLeft);
     const dotsContainer = document.querySelector(nameDots);
+    let lastWidth = window.innerWidth;
     
     if (!carouselContainer || !arrowRight || !arrowLeft || !dotsContainer) {
         return;
@@ -77,6 +78,11 @@ export function viewCarousel(nameCarousel, nameArrowRight, nameArrowLeft, nameDo
         carouselContainer.addEventListener('scroll', updateActiveDot);
         
         window.addEventListener('resize', () => {
+            if (window.innerWidth === lastWidth) {
+                return;
+            }
+            lastWidth = window.innerWidth;
+            
             numberCards = getVisibleCards(nameCarousel);
             
             const maxIndexResize = Math.max(0, dataFromServer.cards.length - numberCards);
