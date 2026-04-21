@@ -104,7 +104,15 @@ export function viewCarousel(nameCarousel, nameArrowRight, nameArrowLeft, nameDo
             document.body.style.top = '';
             document.body.style.left = '';
             document.body.style.right = '';
-            window.scrollTo(0, scrollY);
+           
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    window.scrollTo({
+                        top: scrollY,
+                        behavior: 'instant'
+                    });
+                });
+            });
         });
     });
 }
