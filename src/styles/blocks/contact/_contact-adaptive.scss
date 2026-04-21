@@ -1,0 +1,101 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+@media (max-width: 900px) {
+    .contact-block__email {
+        width: calc(matchingLayout(656) * 1.2);
+        height: calc(matchingLayout(82) * 1.2);
+        border-radius: 13px;
+
+        &-input {
+            width: calc(matchingLayout(431) * 1.2);
+        }
+
+        &-button {
+            width: calc(matchingLayout(185) * 1.2);
+            height: calc(matchingLayout(66) * 1.2);
+            border-radius: 13px;
+        }
+    }
+        
+}
+
+@media (max-width: 700px) {
+    .contact-block__email {
+        border-radius: 10px;
+
+        &-button {
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-block {
+        flex-direction: column;
+        row-gap: matchingLayout(30);
+
+        &__email {
+            width: calc(matchingLayout(656) * 1.6);
+            height: calc(matchingLayout(82) * 1.6);
+
+            &-input {
+                width: calc(matchingLayout(431) * 1.6);
+            }
+
+            &-button {
+                width: calc(matchingLayout(185) * 1.6);
+                height: calc(matchingLayout(66) * 1.6);
+            }
+        }
+
+        &__text-title {
+            text-align: center;
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .contact-block {
+        flex-direction: column;
+        row-gap: matchingLayout(60);
+
+        &__email {
+            width: calc(matchingLayout(656) * 1.8);
+            height: calc(matchingLayout(82) * 1.8);
+            border-radius: 8px;
+
+            &-input {
+                width: calc(matchingLayout(431) * 1.8);
+            }
+
+            &-button {
+                width: calc(matchingLayout(185) * 1.8);
+                height: calc(matchingLayout(66) * 1.8);
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 390px) {
+    .contact-block {
+        flex-direction: column;
+        row-gap: matchingLayout(90);
+
+        &__email {
+            width: calc(matchingLayout(656) * 2);
+            height: calc(matchingLayout(82) * 2.3);
+           
+            &-input {
+                width: calc(matchingLayout(431) * 2);
+            }
+
+            &-button {
+                width: calc(matchingLayout(185) * 3);
+                height: calc(matchingLayout(66) * 2.3);
+            }
+        }
+    }
+}

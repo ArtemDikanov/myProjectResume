@@ -1,0 +1,49 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.video-link-desktop {
+    width: matchingLayout(160);
+    height: matchingLayout(160);
+    margin-top: 10%;
+    margin-right: 20%;
+
+    @include hover {
+        scale: 110%;
+        transition-duration: 0.3s;
+    }
+
+    &__svg {
+        width: matchingLayout(160);
+        height: matchingLayout(160);
+    }
+}
+
+.video-link-mobile {
+    display: none;
+    justify-content: center;
+    min-width: matchingLayout(723);
+    min-height: matchingLayout(122);
+    padding: min(matchingLayout(24)) min(matchingLayout(48));
+    padding-bottom: min(matchingLayout(24));
+    margin-top: 3%;
+    margin-left: 5%;
+    font-family: var(--font-family-base);
+    font-size: fontSizeUniversal(14px, 24, 48px);
+    color: var(--white-color);
+    font-weight: 400;
+    border: var(--border);
+    border-radius: 12px;
+    background: var(--grey-color);
+    backdrop-filter: var(--blur-filter); 
+    white-space: nowrap;
+    text-decoration: none;
+
+    @include hover {
+        background: var(--light-blue-color);
+        transition-duration: 0.3s; 
+    }
+
+    &:visited, &:hover, &active{
+        color: var(--white-color);
+    }
+}
+

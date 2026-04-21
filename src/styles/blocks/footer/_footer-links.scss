@@ -1,0 +1,21 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.footer-block__links {
+    display: flex;
+    align-items: flex-start;
+    column-gap: matchingLayout(160);
+    font-size: fontSizeUniversal(16px, 20, 48px);
+
+    .links-quick-links__title, .links-resources__title {
+        margin-bottom: matchingLayout(24);
+    }
+
+    .links-quick-links__menu-list, .links-resources__list {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: matchingLayout(16);
+        
+    }
+
+}

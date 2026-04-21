@@ -1,0 +1,26 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+@media (max-width: 550px) {
+    .footer-block {
+        align-items: center;
+        flex-direction: column-reverse;
+        row-gap: matchingLayout(40);
+
+        &__my-contact {
+            @include flex;
+
+            &-logo {
+                display: none;
+            }
+
+            &-subtitle {
+                display: none;
+            }
+
+            .my-contact-links__link-svg {
+                width: matchingLayout(100);
+                height: matchingLayout(100)
+            }
+        }
+    }
+}

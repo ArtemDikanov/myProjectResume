@@ -1,0 +1,40 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.header__burger {
+        display: none;
+        background: none;
+        border: none;
+        padding-top: calc(fontSize(14) / 2);
+
+        @include hover {
+            .line-1, .line-2, .line-3 {
+                stroke: var(--light-blue-color);
+                transition: 0.3s;
+            }
+        }
+
+        &-svg {
+            width: calc(fontSize(14) * 2);
+            height: calc(fontSize(14) * 2);
+
+        }
+}
+
+
+.header__burger.active .line-1 {
+    transform: translateY(0px) translateX(8.5px) rotate(45deg);
+    will-change: transform;
+}
+        
+.header__burger.active .line-2 {
+    opacity: 0;
+    transform: scale(0);
+    will-change: transform;
+}
+        
+.header__burger.active .line-3 {
+    transform: translateY(8.5px) translateX(-8.5px) rotate(-45deg);
+    will-change: transform;
+}
+
+

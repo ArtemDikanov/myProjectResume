@@ -1,0 +1,25 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+:root {
+    --dark-color: #0F1922;
+    --dark-blue-color: #012E4D;
+    --light-blue-color: #0097FF;
+    --grey-color: rgba(255, 255, 255, 0.08);
+    --white-color: #fff;
+    --grey-blue-color: #507c99;
+    --blur-filter: blur(8px);
+    --translucent-color: 0.8;  
+
+    --font-family-base: 'Inter', sans-serif;
+    --font-family-title: 'Outfit', sans-serif; 
+    --font-family-contacts: 'Poppins', sans-serif; 
+   
+    
+    --border: 2px solid rgba(255, 255, 255, 0.04);
+    --border-radius: 24px;
+    --border-radius-button: 16px;
+
+    --desktop-display-width: 1440;
+    
+}
+

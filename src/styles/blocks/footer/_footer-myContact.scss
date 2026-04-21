@@ -1,0 +1,32 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.footer-block__my-contact {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: matchingLayout(24);
+
+    &-title {
+        font-size: fontSizeUniversal(18px, 32, 50px);
+    }
+
+    &-subtitle {
+        font-size: fontSizeUniversal(16px, 24, 48px);
+    }
+
+    &-logo {
+        width: matchingLayout(80);
+        height: matchingLayout(80)
+    }
+
+    .my-contact-links {
+        @include flex;
+        column-gap: matchingLayout(8);
+
+        &__link-svg {
+            width: matchingLayout(48);
+            height: matchingLayout(48)
+        }
+    }
+}
+

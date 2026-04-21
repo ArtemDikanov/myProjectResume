@@ -1,0 +1,48 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.packages-block__pictures {
+    position: relative;
+    margin-top: matchingLayout(60);
+    margin-bottom: matchingLayout(100);
+    margin-left: matchingLayout(80);
+    margin-right: matchingLayout(80);
+
+    .packages-gallery {
+        display: grid;
+        grid-template-columns: matchingLayout(292) matchingLayout(292);
+        grid-template-rows: matchingLayout(310) matchingLayout(147) matchingLayout(147);
+        gap: matchingLayout(16);
+
+        &__big {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+            width: matchingLayout(600);
+            height: matchingLayout(310);
+            border-radius: var(--border-radius);
+        }
+
+        &__average {
+            grid-column: 1;
+            grid-row: 2 / span 3;
+            width: matchingLayout(292);
+            height: matchingLayout(310);
+            border-radius: var(--border-radius);
+        }
+
+        &__small-1 {
+            grid-column: 2;
+            grid-row: 2;
+            width: matchingLayout(292);
+            height: matchingLayout(147);
+            border-radius: var(--border-radius);
+        }
+
+        &__small-2 {
+            grid-column: 2;
+            grid-row: 3;
+            width: matchingLayout(292);
+            height: matchingLayout(147);
+            border-radius: var(--border-radius);
+        }
+    }
+}

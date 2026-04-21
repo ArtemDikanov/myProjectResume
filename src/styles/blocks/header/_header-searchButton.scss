@@ -1,0 +1,22 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.header__search-button {
+    background: none;
+    border: none;
+
+    @include hover {
+        .color-search {
+            stroke: var(--light-blue-color);
+            transition: 0.3s;
+        }
+    }
+        
+    &-svg {
+        width: calc(fontSizeUniversal(14px, 14, 48px) * 2);
+        height: calc(fontSizeUniversal(14px, 14, 48px) * 2);
+    }
+}
+
+.color-search {
+    stroke: var(--dark-color);
+}

@@ -1,0 +1,27 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.about-block__information {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: matchingLayout(511);
+    margin-top: matchingLayout(20);
+    margin-right: matchingLayout(80);
+
+    &-title {
+        font-size: fontSizeUniversal(18px, 36, 50px);
+        margin-bottom: matchingLayout(8);
+    }
+
+    &-subtitle {
+        font-size: fontSizeUniversal(16px, 24, 48px);
+        margin-bottom: matchingLayout(40);
+    }
+
+    &-paragraph {
+        margin-bottom: matchingLayout(40);
+        padding-left: matchingLayout(32);
+        border-left: matchingLayout(3) solid #0099ff;
+    }
+
+}

@@ -1,0 +1,37 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+@media (max-width: 800px) {
+    .hero-button {
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-block {
+        &__main {
+            flex-direction: column;
+
+            .text-block {
+                align-items: center;
+                text-align: center;
+            }
+
+            .video-link-desktop {
+                display: none;
+            }
+
+            .video-link-mobile {
+                display: flex;
+            }
+
+            .hero-button {
+                min-width: matchingLayout(723);
+                min-height: matchingLayout(122);
+
+                &__svg {
+                    display: none;
+                }
+            }
+        }
+    }
+}

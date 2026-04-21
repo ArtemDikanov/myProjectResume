@@ -1,0 +1,32 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+@mixin hover {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+
+    @media (pointer: fine) {
+        &:active {
+            @content;
+        }
+    }
+
+}
+
+@function fontSizeUniversal($minSize, $desiredFont, $maxSize) {
+    @return clamp($minSize, calc(100vw / (var(--desktop-display-width) / $desiredFont)), $maxSize);
+};
+
+@function matchingLayout($layoutValue) {
+    @return calc(100vw / (var(--desktop-display-width) / $layoutValue));
+}
+
+@function fontSizeBurgerMenu($desiredFont) {
+    @return clamp(16px, calc(100vw / (850 / $desiredFont)), 48px);
+};

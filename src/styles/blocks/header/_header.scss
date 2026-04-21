@@ -1,0 +1,36 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: fontSizeUniversal(14px, 14, 48px);
+    font-family: var(--font-family-base);
+
+    &__logo {
+        padding-top: calc(fontSizeUniversal(14px, 14, 48px) / 2);
+        padding-left: matchingLayout(80);
+        
+        &-png {
+            width: clamp(30px, calc(matchingLayout(80) / 2), 50px);
+            height: clamp(30px, calc(matchingLayout(80) / 2), 50px);
+        }
+
+    }
+
+    &__menu {
+        &-list {
+            @include flex;
+            flex-direction: row;
+            column-gap: matchingLayout(40);
+            padding-right: matchingLayout(80);
+
+            .visually-hidden {
+                display: none;
+            }
+        }
+    }
+}
+
+

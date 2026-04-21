@@ -1,0 +1,43 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.hero-block {
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/images/preview-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: calc(100vw / (1440 / 280));
+        
+        .text-block {
+            @include flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: var(--white-color);
+            max-width: 60%;
+            margin-left: 5%;
+
+            &__title {
+                font-family: var(--font-family-title);
+                font-size: fontSizeUniversal(40px, 64, 64px);
+                font-weight: 500;
+            }
+
+            &__paragraph {
+                font-family: var(--font-family-base);
+                font-size: fontSizeUniversal(14px, 20, 48px);
+                font-weight: 400;
+            }
+        }
+
+    }
+}
+
+
+
+

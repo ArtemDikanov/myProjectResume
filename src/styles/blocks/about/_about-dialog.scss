@@ -1,0 +1,27 @@
+@use '/src/styles/mixinsAndFunctions' as *;
+
+.about-dialog {
+    height: 80dvh;
+    border: none;
+    color: var(--white-color);
+    background: var(--dark-blue-color);
+    font-size: fontSizeUniversal(20px, 30, 48px);
+    overflow: visible;
+
+    &::backdrop {
+        background: var(--dark-color);
+    }
+
+    &__text {
+        overflow-y: auto;   
+        max-height: 100%; 
+
+        &::-webkit-scrollbar {
+            background-color: var(--dark-blue-color);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--dark-color);
+        }
+    }
+}
