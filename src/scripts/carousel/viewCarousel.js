@@ -82,7 +82,14 @@ export function viewCarousel(nameCarousel, nameArrowRight, nameArrowLeft, nameDo
                 return;
             }
             lastWidth = window.innerWidth;
+
+            const scrollY = window.scrollY;
             
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${scrollY}px`;
+            document.body.style.left = '0';
+            document.body.style.right = '0';
+
             numberCards = getVisibleCards(nameCarousel);
             
             const maxIndexResize = Math.max(0, dataFromServer.cards.length - numberCards);
@@ -92,6 +99,12 @@ export function viewCarousel(nameCarousel, nameArrowRight, nameArrowLeft, nameDo
             
             renderDots(nameCarousel, nameDots, dataFromServer, numberCards, currentIndex);
             scrollToSlide(nameCarousel, currentIndex);
+
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.left = '';
+            document.body.style.right = '';
+            window.scrollTo(0, scrollY);
         });
     });
 }
