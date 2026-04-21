@@ -82,8 +82,6 @@ export function viewCarousel(nameCarousel, nameArrowRight, nameArrowLeft, nameDo
                 return;
             }
             lastWidth = window.innerWidth;
-            
-            document.body.style.overflow = 'hidden';
 
             numberCards = getVisibleCards(nameCarousel);
             
@@ -93,9 +91,8 @@ export function viewCarousel(nameCarousel, nameArrowRight, nameArrowLeft, nameDo
             }
             
             renderDots(nameCarousel, nameDots, dataFromServer, numberCards, currentIndex);
-            scrollToSlide(nameCarousel, currentIndex);
+            //scrollToSlide(nameCarousel, currentIndex);
 
-            document.body.style.overflow = '';
         });
     });
 }
