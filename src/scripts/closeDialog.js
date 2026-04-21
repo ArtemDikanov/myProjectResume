@@ -3,12 +3,12 @@ export function dialogClose(nameDialog, nameButton) {
     const button = document.querySelector(nameButton);
     const body = document.querySelector("body");
 
-    if (!nameDialog) {
+    if (!dialog) {
             console.warn(`Элемент ${nameDialog} не найден`);
             return;
     }
 
-    if (!nameButton) {
+    if (!button) {
             console.warn(`Элемент ${nameButton} не найден`);
             return;
     }

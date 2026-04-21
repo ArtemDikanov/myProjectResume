@@ -7,7 +7,6 @@
     flex-direction: row;
     font-size: fontSizeUniversal(14px, 14, 48px);
     font-family: var(--font-family-base);
-    z-index: 1000;
 
     &__logo {
         padding-top: calc(fontSizeUniversal(14px, 14, 48px) / 2);

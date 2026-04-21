@@ -37,6 +37,11 @@
     white-space: nowrap;
     text-decoration: none;
 
+    @include hover {
+        background: var(--light-blue-color);
+        transition-duration: 0.3s; 
+    }
+
     &:visited, &:hover, &active{
         color: var(--white-color);
     }

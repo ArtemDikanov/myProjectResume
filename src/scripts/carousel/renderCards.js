@@ -1,5 +1,11 @@
 export function renderCards(nameCarousel, dataFromServer) {
     const carouselContainer = document.querySelector(nameCarousel);
+
+    if (!carouselContainer) {
+            console.warn(`Элемент ${nameCarousel} не найден`);
+            return;
+    }
+
     let output = '';
     
     if (nameCarousel === '.destinations-carousel') {

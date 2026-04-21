@@ -3,7 +3,6 @@
 .header__search-button {
     background: none;
     border: none;
-    padding-top: calc(fontSize(14) / 2);
 
     @include hover {
         .color-search {

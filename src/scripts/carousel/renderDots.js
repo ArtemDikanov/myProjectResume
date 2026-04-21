@@ -2,6 +2,10 @@ import { scrollToSlide } from './scrollToSlide';
 
 export function renderDots(nameCarousel, nameDots, dataFromServer, numberCards, currentIndex) {
     const dotsContainer = document.querySelector(nameDots);
+    if (!dotsContainer) {
+            console.warn(`Элемент ${nameDots} не найден`);
+            return;
+    }
     dotsContainer.innerHTML = '';
     const dotsCount = Math.max(0, dataFromServer.cards.length - numberCards) + 1;
     
