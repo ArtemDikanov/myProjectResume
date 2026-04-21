@@ -1,7 +1,11 @@
 export function openHeaderDialog() {
     const burger = document.querySelector('.header__burger');
     const dialog = document.querySelector('.header__dialog');
-    const link = document.querySelector(".header-dialog-link")
+    const linkAbout = document.querySelector(".header-dialog-link-about");
+    const linkDestinations = document.querySelector(".header-dialog-link-destinations");
+    const linkPackages = document.querySelector(".header-dialog-link-packages");
+    const linkTestimonial = document.querySelector(".header-dialog-link-testimonial");
+    const linkContact = document.querySelector(".header-dialog-link-contact");
     const body = document.querySelector("body");
     
     if (!burger) {
@@ -14,8 +18,28 @@ export function openHeaderDialog() {
         return;
     }
 
-    if (!link) {
-        console.warn('Элемент .header-dialog-link не найден');
+    if (!linkAbout) {
+        console.warn('Элемент .header-dialog-link-about не найден');
+        return;
+    }
+
+    if (!linkDestinations) {
+        console.warn('Элемент .header-dialog-link-destinations не найден');
+        return;
+    }
+    
+    if (!linkPackages) {
+        console.warn('Элемент .header-dialog-link-packages не найден');
+        return;
+    }
+    
+    if (!linkTestimonial) {
+        console.warn('Элемент .header-dialog-link-testimonial не найден');
+        return;
+    }
+
+    if (!linkContact) {
+        console.warn('Элемент .header-dialog-link-contact не найден');
         return;
     }
     
@@ -32,10 +56,33 @@ export function openHeaderDialog() {
         }
     });
 
-    link.addEventListener('click', () => {
+    linkAbout.addEventListener('click', () => {
         dialog.close();
         burger.classList.remove('active');
         body.classList.remove('body-no-scroll-header'); 
     });
 
+    linkDestinations.addEventListener('click', () => {
+        dialog.close();
+        burger.classList.remove('active');
+        body.classList.remove('body-no-scroll-header'); 
+    });
+
+    linkPackages.addEventListener('click', () => {
+        dialog.close();
+        burger.classList.remove('active');
+        body.classList.remove('body-no-scroll-header'); 
+    });
+
+    linkTestimonial.addEventListener('click', () => {
+        dialog.close();
+        burger.classList.remove('active');
+        body.classList.remove('body-no-scroll-header'); 
+    });
+
+    linkContact.addEventListener('click', () => {
+        dialog.close();
+        burger.classList.remove('active');
+        body.classList.remove('body-no-scroll-header'); 
+    });
 }
