@@ -1,6 +1,6 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
-.header-slider__text {
+.carousel-header__text {
     &-title {
         font-size: fontSizeUniversal(18px, 36, 50px);
     }
