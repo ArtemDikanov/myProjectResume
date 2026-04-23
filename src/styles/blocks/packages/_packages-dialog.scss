@@ -8,7 +8,9 @@
     font-size: fontSizeUniversal(20px, 30, 48px);
     overflow: visible;
 
-    &::backdrop {
+    .packages-block__information-dialog-backdrop {
+        width: 100%;
+        height: 100dvh;
         background: var(--dark-color);
     }
 

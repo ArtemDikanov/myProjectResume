@@ -9,8 +9,8 @@ openHeaderDialog();
 import { dialogOpen } from './openDialog';
 import { dialogClose } from './closeDialog';
 
-dialogOpen(".about-dialog", ".about-block__information-button");
-dialogClose(".about-dialog", ".about-dialog__close-button");
+dialogOpen(".about-dialog", ".about-block__information-button", ".about-block__information-dialog-backdrop");
+dialogClose(".about-dialog", ".about-dialog__close-button", ".about-block__information-dialog-backdrop");
 
 import { viewCarousel } from './carousel/viewCarousel';
 
@@ -26,8 +26,8 @@ viewCarousel(".testimonial-carousel",
             ".testimonial-block__carousel-markers",
             "./json/testimonial-cards.json");
 
-dialogOpen(".packages-dialog", ".packages-block__information-button");
-dialogClose(".packages-dialog", ".packages-dialog__close-button");
+dialogOpen(".packages-dialog", ".packages-block__information-button", ".packages-block__information-dialog-backdrop");
+dialogClose(".packages-dialog", ".packages-dialog__close-button", ".packages-block__information-dialog-backdrop");
 
 import {sendEmail} from './sendEmail';
 

@@ -12,7 +12,10 @@ export function renderCards(nameCarousel, dataFromServer) {
         dataFromServer.cards.forEach(card => {
             output += `
                 <div class="destinations-carousel__card">
-                    <img class="destinations-carousel__card-img" src="./images/${card.image}.jpg" alt="${card.description}">
+                    <picture>
+                        <source srcset="./images/${card.image}.webp" type="image/webp">
+                        <img class="destinations-carousel__card-img" src="./images/${card.image}.jpg" alt="${card.description}">
+                    </picture>
                     <div class="destinations-carousel__card-hover-content hover-content">
                         <h3 class="hover-content__title">${card.title}</h3>
                         <p class="hover-content__paragraph">${card.description}</p>
@@ -27,6 +30,10 @@ export function renderCards(nameCarousel, dataFromServer) {
             output += ` <div class="testimonial-carousel__card">
                             <div class="testimonial-carousel__card-header feedback-card-header">
                                 <img class="feedback-card-header__photo" src="./images/${card.image}.jpg" alt="${card.description}">
+                                <picture>
+                                    <source srcset./images/${card.image}.webp" type="image/webp">
+                                    <img class="feedback-card-header__photo" src="./images/${card.image}.jpg" alt="${card.description}">
+                                </picture>
                                 <div class="feedback-card-header__info">
                                     <h4 class="feedback-card-header__info-name">${card.name}</h4>
                                     <div class="feedback-card-header__info-stars feedback-stars">`;

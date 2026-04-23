@@ -11,7 +11,10 @@
     <section class="hero-block">
       <header class="header">
         <div class="header__logo">
-          <img class="header__logo-png" src="./images/logo-blue.png" alt="">
+          <picture>
+            <source srcset="./images/logo-blue.webp" type="image/webp">
+            <img class="header__logo-png" src="./images/logo-blue.png" alt="синий логотип сайта">
+          </picture>
         </div>
         <nav class="header__menu">
           <ul class="header__menu-list">
@@ -101,10 +104,22 @@
       <section class="about-block" id="about-block">
         <div class="about-block__pictures">
           <div class="about-block__pictures-gallery about-gallery">
-            <img class="about-gallery__big" src="./images/aboutUsSection-image1.jpg" loading="lazy" alt="Человек под водой всплывает">
-            <img class="about-gallery__average" src="./images/aboutUsSection-image2.jpg" loading="lazy" alt="Человек под водой подплывает к кораллам">
-            <img class="about-gallery__small-1" src="./images/aboutUsSection-image3.jpg" loading="lazy" alt="Полосатые рыбы плывут под водой">
-            <img class="about-gallery__small-2" src="./images/aboutUsSection-image4.jpg" loading="lazy" alt="Черепаха под водой стремится вынырнуть">
+            <picture>
+              <source srcset="./images/aboutUsSection-image1.webp" type="image/webp">
+              <img class="about-gallery__big" src="./images/aboutUsSection-image1.jpg" loading="lazy" alt="Человек под водой всплывает">
+            </picture>
+           <picture>
+              <source srcset="./images/aboutUsSection-image2.webp" type="image/webp">
+              <img class="about-gallery__average" src="./images/aboutUsSection-image2.jpg" loading="lazy" alt="Человек под водой подплывает к кораллам">
+            </picture>
+            <picture>
+              <source srcset="./images/aboutUsSection-image3.webp" type="image/webp">
+              <img class="about-gallery__small-1" src="./images/aboutUsSection-image3.jpg" loading="lazy" alt="Полосатые рыбы плывут под водой">
+            </picture>
+            <picture>
+              <source srcset="./images/aboutUsSection-image4.webp" type="image/webp">
+              <img class="about-gallery__small-2" src="./images/aboutUsSection-image4.jpg" loading="lazy" alt="Черепаха под водой стремится вынырнуть">
+            </picture>
           </div>
         </div>
         <div class="about-block__information">
@@ -140,6 +155,7 @@
               Safety is our anchor, but wonder is our compass. We utilize top-of-the-line equipment and maintain the highest safety standards, ensuring that your experience is as seamless as it is breathtaking. From the moment you step aboard our vessels, you are not just a tourist; you are an explorer. Let us take you to where the wild things are. The surface is just the beginning.
             </div>
           </dialog>
+          <div class="about-block__information-dialog-backdrop visually-hidden"></div>
         </div>
       </section>
       <section class="destinations-block" id="destinations-block">
@@ -217,21 +233,30 @@
           <div class="packages-block__information-list packages-container-list">
             <ul class="packages-container-list__list packages-list">
               <li class="packages-list__item">
-                <img src="./icons/numberCircleOne-icon.png" alt="" class= "packages-list__item-png">
+                <picture>
+                  <source srcset="./icons/numberCircleOne-icon.webp" type="image/webp">
+                  <img src="./icons/numberCircleOne-icon.png" alt="" class= "packages-list__item-png">
+                </picture>
                 <div class="packages-list__item-text item-text">
                   <h2 class="item-text__title">Golden Package</h2>
                   <h3 class="item-text__subtitle subtitle">Private guide, premium gear, and exclusive sites</h3>
                 </div>
               </li>
               <li class="packages-list__item">
-                <img src="./icons/numberCircleTwo-icon.png" alt="" class= "packages-list__item-png">
+                <picture>
+                  <source srcset="./icons/numberCircleTwo-icon.webp" type="image/webp">
+                  <img src="./icons/numberCircleTwo-icon.png" alt="" class= "packages-list__item-png">
+                </picture>
                 <div class="packages-list__item-text item-text">
                   <h2 class="item-text__title">Silver Package</h2>
                   <h3 class="item-text__subtitle subtitle">Small groups, quality gear, and onboard refreshments</h3>
                 </div>
               </li>
               <li class="packages-list__item">
-                <img src="./icons/numberCircleThree-icon.png" alt="" class= "packages-list__item-png">
+                <picture>
+                  <source srcset="./icons/numberCircleThree-icon.webp" type="image/webp">
+                  <img src="./icons/numberCircleThree-icon.png" alt="" class= "packages-list__item-png">
+                </picture>
                 <div class="packages-list__item-text item-text">
                   <h2 class="item-text__title">Bronze Package</h2>
                   <h3 class="item-text__subtitle subtitle">Two-tank boat trip with standard equipment</h3>
@@ -262,28 +287,40 @@
             <div class="packages-dialog__container">
               <ul class="packages-dialog__container-list packages-dialog-list">
                 <li class="packages-dialog-list__item">
-                  <img src="./icons/numberCircleOne-icon.png" alt="" class="packages-dialog-list__item-png">
+                  <picture>
+                    <source srcset="./icons/numberCircleOne-icon.webp" type="image/webp">
+                    <img src="./icons/numberCircleOne-icon.png" alt="" class="packages-dialog-list__item-png">
+                  </picture>
                   <div class="packages-dialog-list__item-text packages-dialog-item-text">
                     <h2 class="packages-dialog-item-text__title">Golden Package</h2>
                     <h3 class="packages-dialog-item-text__subtitle subtitle">The ultimate VIP experience featuring private guided dives, premium rental gear, exclusive access to secluded sites, and professional underwater photography.</h3>
                   </div>
                 </li>
                 <li class="packages-dialog-list__item">
-                  <img src="./icons/numberCircleTwo-icon.png" alt="" class="packages-dialog-list__item-png">
+                  <picture>
+                    <source srcset="./icons/numberCircleTwo-icon.webp" type="image/webp">
+                    <img src="./icons/numberCircleTwo-icon.png" alt="" class="packages-dialog-list__item-png">
+                  </picture>
                   <div class="packages-dialog-list__item-text packages-dialog-item-text">
                     <h2 class="packages-dialog-item-text__title">Silver Package</h2>
                     <h3 class="packages-dialog-item-text__subtitle subtitle">The perfect balance of value and comfort, including small-group guided tours, high-quality equipment, and complimentary refreshments aboard the boat.</h3>
                   </div>
                 </li>
                 <li class="packages-dialog-list__item">
-                  <img src="./icons/numberCircleThree-icon.png" alt="" class="packages-dialog-list__item-png">
+                  <picture>
+                    <source srcset="./icons/numberCircleThree-icon.webp" type="image/webp">
+                    <img src="./icons/numberCircleThree-icon.png" alt="" class="packages-dialog-list__item-png">
+                  </picture>
                   <div class="packages-dialog-list__item-text packages-dialog-item-text">
                     <h2 class="packages-dialog-item-text__title">Bronze Package</h2>
                     <h3 class="packages-dialog-item-text__subtitle subtitle">An essential dive package for certified adventurers, covering a two-tank boat trip with standard gear rental and expert briefings.</h3>
                   </div>
                 </li>
                 <li class="packages-dialog-list__item">
-                  <img src="./icons/strangerThings-icon.png" alt="" class="packages-dialog-list__item-png">
+                  <picture>
+                    <source srcset="./icons/strangerThings-icon.webp" type="image/webp">
+                    <img src="./icons/strangerThings-icon.png" alt="" class="packages-dialog-list__item-png">
+                  </picture>
                   <div class="packages-dialog-list__item-text packages-dialog-item-text">
                     <h2 class="packages-dialog-item-text__title">Stranger Package</h2>
                     <h3 class="packages-dialog-item-text__subtitle subtitle">Stranger Package: The official Stranger Things x Dive collab — explore the murky depths where strange currents flicker like the Upside Down, complete with themed gear, a retro radio, and a secret dive log signed by Chief Hopper</h3>
@@ -292,13 +329,26 @@
               </ul>
             </div>
           </dialog>
+          <div class="packages-block__information-dialog-backdrop visually-hidden"></div>
         </div>
         <div class="packages-block__pictures">
           <div class="packages-block_pictures-gallery packages-gallery">
-            <img class="packages-gallery__big" src="./images/packagesSection-image1.jpg" loading="lazy" alt="Под кристально чистой голубой водой видно дно">
-            <img class="packages-gallery__average" src="./images/packagesSection-image2.jpg" loading="lazy" alt="Полосатые рыбы плывут под водой">
-            <img class="packages-gallery__small-1" src="./images/packagesSection-image3.jpg" loading="lazy" alt="Человек и голубые рыбки плывут вдоль голубых кораллов">
-            <img class="packages-gallery__small-2" src="./images/packagesSection-image4.jpg" loading="lazy" alt="На переднем плане много кораллов, а на заднем плывет человек">
+            <picture>
+              <source srcset="./images/packagesSection-image1.webp" type="image/webp">
+              <img class="packages-gallery__big" src="./images/packagesSection-image1.jpg" loading="lazy" alt="Под кристально чистой голубой водой видно дно">
+            </picture>
+            <picture>
+              <source srcset="./images/packagesSection-image2..webp" type="image/webp">
+              <img class="packages-gallery__average" src="./images/packagesSection-image2.jpg" loading="lazy" alt="Полосатые рыбы плывут под водой">
+            </picture>
+            <picture>
+              <source srcset="./images/packagesSection-image3.webp" type="image/webp">
+              <img class="packages-gallery__small-1" src="./images/packagesSection-image3.jpg" loading="lazy" alt="Человек и голубые рыбки плывут вдоль голубых кораллов">
+            </picture>
+            <picture>
+              <source srcset="./images/packagesSection-image4.webp" type="image/webp">
+              <img class="packages-gallery__small-2" src="./images/packagesSection-image4.jpg" loading="lazy" alt="На переднем плане много кораллов, а на заднем плывет человек">
+            </picture>
           </div>
         </div>
       </section>
@@ -379,7 +429,10 @@
     </main>
     <footer class="footer-block">
       <div class="footer-block__my-contact">
-        <img src="./images/logo-white.png" alt="Белый логотип сайта" class="footer-block__my-contact-logo">
+        <picture>
+          <source srcset="./images/logo-white.webp" type="image/webp">
+          <img src="./images/logo-white.png" alt="Белый логотип сайта" class="footer-block__my-contact-logo">
+        </picture>
         <h2 class="footer-block__my-contact-title">Диканов Артём</h2>
         <h3 class="footer-block__my-contact-subtitle subtitle">Связь со мной:</h3>
         <p class="footer-block__my-contact-paragraph-email paragraph">dvdart.2010@mail.ru</p>
@@ -396,7 +449,7 @@
             </svg>               
           </a>
         </div>
-        <p class="footer-block__my-contact-end-date paragraph">21.04.2026</p>
+        <p class="footer-block__my-contact-end-date paragraph">23.04.2026</p>
       </div>
       <div class="footer-block__links">
         <div class="footer-block__links-quick-links links-quick-links">

@@ -1,6 +1,7 @@
-export function dialogClose(nameDialog, nameButton) {
+export function dialogClose(nameDialog, nameButton, nameBackdrop) {
     const dialog = document.querySelector(nameDialog);
     const button = document.querySelector(nameButton);
+    const backdrop = document.querySelector(nameBackdrop);
     const body = document.querySelector("body");
 
     if (!dialog) {
@@ -13,8 +14,14 @@ export function dialogClose(nameDialog, nameButton) {
             return;
     }
 
+    if (!backdrop) {
+            console.warn(`Элемент ${nameBackdrop} не найден`);
+            return;
+    }
+
     button.addEventListener('click', () => {
         dialog.close();
         body.classList.remove('body-no-scroll'); 
+        body.classList.add('visually-hidden');
     });
 }
