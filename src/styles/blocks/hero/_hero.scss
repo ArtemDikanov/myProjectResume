@@ -3,7 +3,7 @@
 .hero-block {
     width: 100%;
     height: 100%;
-    background-image: url(/images/preview-image-desktop.jpg);
+    background-image: url(/images/preview-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -39,9 +39,9 @@
 }
 
 
-@supports (background-image: url('/images/preview-image-desktop.webp')) {
+@supports (background-image: url('/images/preview-image.webp')) {
   .hero-block {
-    background-image: url('/images/preview-image-desktop.webp');
+    background-image: url('/images/preview-image.webp');
   }
 }
 

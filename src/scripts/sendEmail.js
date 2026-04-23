@@ -15,7 +15,11 @@ export function sendEmail() {
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-        alert(`You entered your email address: ${inputEmail.value}`)
-    }
-    );
+        if (inputEmail.value !== "" && inputEmail.value !== " ") {
+            alert(`You entered your email address: ${inputEmail.value}`);
+        }
+        else {
+            alert('You did not enter your email address!');
+        }
+    });
 }

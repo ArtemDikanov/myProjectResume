@@ -29,7 +29,6 @@ export function renderCards(nameCarousel, dataFromServer) {
         dataFromServer.cards.forEach(card => {
             output += ` <div class="testimonial-carousel__card">
                             <div class="testimonial-carousel__card-header feedback-card-header">
-                                <img class="feedback-card-header__photo" src="./images/${card.image}.jpg" alt="${card.description}">
                                 <picture>
                                     <source srcset./images/${card.image}.webp" type="image/webp">
                                     <img class="feedback-card-header__photo" src="./images/${card.image}.jpg" alt="${card.description}">

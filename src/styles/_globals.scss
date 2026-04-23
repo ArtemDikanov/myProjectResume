@@ -1,5 +1,11 @@
 @use '/src/styles/mixinsAndFunctions' as *;
 
+
+html, body {
+  scroll-behavior: auto;
+}
+
+
 .visually-hidden {
     display: none;
 }
@@ -7,6 +13,31 @@
 .body-no-scroll {
     overflow: hidden;
     width: 100%;
+}
+
+dialog:modal {
+  overflow: visible;
+  position: fixed;
+}
+
+dialog::backdrop {
+  background-color: var(--dark-color);
+}
+
+dialog + .backdrop {
+  background-color: var(--dark-color); 
+}
+
+dialog {
+  &[open] {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  & + .backdrop {
+    transition: none !important;
+    animation: none !important;
+  }
 }
 
 

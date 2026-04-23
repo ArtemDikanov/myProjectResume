@@ -47,3 +47,6 @@
 @use 'blocks/footer/footer-myContact';
 @use 'blocks/footer/footer-links';
 @use 'blocks/footer/footer-adaptive';
+
+
+@import 'dialog-polyfill/dist/dialog-polyfill.css';

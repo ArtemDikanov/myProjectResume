@@ -1,28 +1,21 @@
-export function dialogOpen(nameDialog, nameButton, nameBackdrop) {
+export function dialogOpen(nameDialog, nameButton) { 
     const dialog = document.querySelector(nameDialog);
     const button = document.querySelector(nameButton);
-    const backdrop = document.querySelector(nameBackdrop);
     const body = document.querySelector("body");
 
     if (!dialog) {
-            console.warn(`Элемент ${nameDialog} не найден`);
-            return;
+        console.warn(`Элемент ${nameDialog} не найден`);
+        return;
     }
-
     if (!button) {
-            console.warn(`Элемент ${nameButton} не найден`);
-            return;
-    }
-
-    if (!backdrop) {
-            console.warn(`Элемент ${nameBackdrop} не найден`);
-            return;
+        console.warn(`Элемент ${nameButton} не найден`);
+        return;
     }
 
     button.addEventListener('click', () => {
+        body.dataset.scrollPosition = window.scrollY;
         dialog.showModal();
-        backdrop.classList.add('')
-        body.classList.remove('visually-hidden'); 
+        body.classList.add('body-no-scroll');
     });
 }
 

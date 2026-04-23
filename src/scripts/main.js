@@ -1,3 +1,5 @@
+import dialogPolyfill from 'dialog-polyfill'
+
 import { viewInput } from './header/viewInput';
 
 viewInput();
@@ -9,8 +11,8 @@ openHeaderDialog();
 import { dialogOpen } from './openDialog';
 import { dialogClose } from './closeDialog';
 
-dialogOpen(".about-dialog", ".about-block__information-button", ".about-block__information-dialog-backdrop");
-dialogClose(".about-dialog", ".about-dialog__close-button", ".about-block__information-dialog-backdrop");
+dialogOpen(".about-dialog", ".about-block__information-button");
+dialogClose(".about-dialog", ".about-dialog__close-button");
 
 import { viewCarousel } from './carousel/viewCarousel';
 
@@ -26,10 +28,19 @@ viewCarousel(".testimonial-carousel",
             ".testimonial-block__carousel-markers",
             "./json/testimonial-cards.json");
 
-dialogOpen(".packages-dialog", ".packages-block__information-button", ".packages-block__information-dialog-backdrop");
-dialogClose(".packages-dialog", ".packages-dialog__close-button", ".packages-block__information-dialog-backdrop");
+dialogOpen(".packages-dialog", ".packages-block__information-button");
+dialogClose(".packages-dialog", ".packages-dialog__close-button");
 
 import {sendEmail} from './sendEmail';
 
 sendEmail();
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dialogs = document.querySelectorAll('dialog');
+  
+  dialogs.forEach(dialog => {
+    dialogPolyfill.registerDialog(dialog);
+  });
+  
+});
